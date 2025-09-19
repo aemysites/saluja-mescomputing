@@ -1,0 +1,37 @@
+.bottom-section .bottom-ad iframe {
+  display: none;
+}
+
+@media (width <= 1194px) {
+  main.grid-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (width <= 992px) {
+  main.grid-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'middle-section middle-section'
+      'right-section right-section'
+      'bottom-section bottom-section';
+  }
+
+  .right-section .right-ad > div {
+    text-align: center;
+  }
+}
+
+@media (width < 1025px) {
+  main.grid-layout {
+    padding-left: unset;
+    padding-right: unset;
+  }
+}
+
+@media (width < 426px) {
+  main.grid-layout {
+    padding-left: unset;
+    padding-right: unset;
+  }
+}

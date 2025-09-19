@@ -1,6 +1,6 @@
 /*
  * Video Block
- * Show a video referenced by a link
+ * Create a video block from a link
  * https://www.hlx.live/developer/block-collection/video
  */
 

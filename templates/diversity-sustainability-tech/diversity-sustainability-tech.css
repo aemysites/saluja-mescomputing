@@ -1,0 +1,122 @@
+.diversity-sustainability-tech {
+  h2 {
+    font-size: 32.44px;
+    line-height: 36px;
+    margin-top: 0;
+    color: #262626;
+  }
+
+  h4 {
+    font-size: var(--body-font-size-s);
+    line-height: 22px;
+    margin-top: 26px;
+    color: #262626;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  .common-preselected-articles-wrapper p {
+    margin-top: 1em;
+  }
+
+  .happy-customers div div table {
+    margin-bottom: 22px;
+  }
+
+  .curtain.auto-section {
+    display: none;
+  }
+
+  .bottom-section.auto-section {
+    margin-bottom: 114px;
+  }
+
+  .common-preselected-articles-container {
+    padding-top: 0;
+
+    .common-preselected-articles-wrapper {
+      margin-top: 66px;
+    }
+
+    .common-preselected-articles.white-background.block {
+      padding-bottom: 0;
+    }
+  }
+
+  .big-article-container .big-article-wrapper {
+    margin-bottom: 76px;
+  }
+
+  .article-cards-container .article-cards-wrapper {
+    margin-bottom: 48px;
+  }
+}
+
+@media (width > 425px) {
+  .diversity-sustainability-tech {
+    h4 {
+      line-height: 28px;
+    }
+  }
+}
+
+@media (width > 575px) {
+  .diversity-sustainability-tech {
+    h2 {
+      font-size: 42px;
+      line-height: var(--line-height-l);
+    }
+  }
+}
+
+@media (width > 768px) {
+  .diversity-sustainability-tech {
+    h2 {
+      margin-top: 0;
+    }
+
+    .big-article-container .big-article-wrapper {
+      padding-top: 0;
+      margin-bottom: 34px;
+    }
+
+    .article-cards-container .article-cards-wrapper {
+      margin-bottom: 33px;
+    }
+
+    & .common-preselected-articles-container {
+      .common-preselected-articles-wrapper {
+        margin-top: 31px;
+        margin-bottom: 48px;
+      }
+    }
+  }
+}
+
+@media (width > 991px) {
+  .section .article-card-ad-container {
+    display: flex;
+    grid-column-gap: 30px;
+    max-width: 1036px;
+
+    & .article-cards-wrapper {
+      width: 70%;
+    }
+
+    & .right-section.sidebar-wrapper {
+      width: 30%;
+    }
+  }
+}
+
+@media (width > 1194px) {
+  .diversity-sustainability-tech {
+    h2 {
+      margin-top: 0;
+      font-size: 54.95px;
+      line-height: 32px;
+    }
+  }
+}

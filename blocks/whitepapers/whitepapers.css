@@ -1,0 +1,172 @@
+.whitepapers > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.whitepapers > div:first-child > div h3 {
+  margin-top: 10px;
+  font-size: 25.63px;
+  line-height: 29px;
+  margin-bottom: 33px;
+}
+
+.whitepapers > div:first-child > div {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.whitepapers > div:first-child > div a {
+  display: block;
+  font-size: 0;
+  background-color: unset;
+  border-radius: 0;
+  margin-bottom: 33px;
+  border-color: transparent;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.whitepapers.block > div:not(:first-child) > div h3 a {
+  color: var(--whitepapers-text-color);
+  font-size: var(--body-font-size-l);
+  line-height: 34px;
+}
+
+.whitepapers.block > div:not(:first-child) > div h3 a:hover {
+  color: var(--whitepapers-bt-hover-color);
+}
+
+.whitepapers > div:first-child > div p {
+  position: absolute;
+  right: 0;
+}
+
+.whitepapers > div:first-child > div a::after {
+  content: '';
+  float: right;
+  width: 24px;
+  height: 20px;
+  background-image: url('/icons/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.whitepapers > div:not(:first-child) > div {
+  order: 1;
+  background-color: var(--whitepapers-bg-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 266px;
+  text-align: center;
+  padding: 16px;
+  margin-bottom: 16px;
+
+  & h3 {
+    margin-top: 10px;
+    color: var(--whitepapers-text-color);
+    font-size: var(--body-font-size-l);
+    line-height: 34px;
+  }
+
+  & p {
+    color: var(--whitepapers-text-color);
+    font-size: var(--body-font-size-s);
+    line-height: var(--line-height-m);
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+
+  & p.button-container {
+    margin-bottom: 0;
+    margin-top: auto;
+  }
+}
+
+.whitepapers > div > div .button {
+  padding: 11px unset;
+  margin-bottom: 0;
+  transition: 0.15s;
+  background-color: var(--whitepapers-bt-color);
+  border-radius: 0;
+  color: var(--whitepapers-btn-text-color);
+  line-height: 22.5px;
+  width: 100%;
+
+  &:hover {
+    background-color: var(--whitepapers-bt-hover-color);
+  }
+}
+
+.whitepapers > div > .columns-img-col {
+  order: 0;
+}
+
+.whitepapers > div > .columns-img-col img {
+  display: block;
+}
+
+@media (width > 480px) {
+  .whitepapers > div:first-child > div h3 {
+    font-size: var(--body-font-size-xl);
+    line-height: var(--line-height-m);
+  }
+
+  .whitepapers > div > div .button {
+    width: unset;
+    padding: 11px;
+  }
+}
+
+@media (width >= 577px) {
+  .whitepapers > div:not(:first-child) > div {
+    margin-bottom: 24px;
+    padding: 24px;
+  }
+
+  .whitepapers > div:first-child > div a {
+    font-family: var(--body-font-family);
+    color: var(--whitepapers-link-color);
+    font-size: var(--body-font-size-xxs);
+    line-height: 20.16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding-right: 0;
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+
+  .whitepapers > div:first-child > div a:hover {
+    color: var(--whitepapers-bt-color);
+    background-color: transparent;
+  }
+
+  .whitepapers > div:first-child > div a::after {
+    margin-left: 12px;
+  }
+}
+
+@media (width > 767px) {
+  .whitepapers > div {
+    flex-direction: unset;
+    gap: 32px;
+  }
+
+  .whitepapers > div > div {
+    margin-bottom: unset;
+    flex: 1;
+    order: unset;
+  }
+
+  .whitepapers h3 {
+    margin-top: 32px;
+  }
+
+  .whitepapers > div > div .button {
+    width: 100%;
+    padding: 11px 0;
+  }
+}

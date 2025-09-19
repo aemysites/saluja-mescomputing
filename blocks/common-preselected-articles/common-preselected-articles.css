@@ -1,0 +1,639 @@
+.common-preselected-articles-container {
+  margin-bottom: 48px;
+}
+
+.common-preselected-articles-wrapper .sponsor-content-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+  line-height: 22px;
+  color: #8e8e8d;
+  font-weight: normal;
+  letter-spacing: unset;
+}
+
+.common-preselected-articles-container > p:first-child {
+  color: var(--text-color-gray-2);
+  margin-block: 0 0;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-family: var(--regular-font-size);
+  font-weight: normal;
+  font-size: var(--body-font-size-s);
+  line-height: 22px;
+  letter-spacing: unset;
+}
+
+.common-preselected-articles {
+  background-color: var(--common-preselected-articles-bg-color);
+  padding: 32px;
+}
+
+.computing-de .common-preselected-articles {
+  background-color: #3f8ac8;
+  padding: 32px;
+}
+
+.common-preselected-articles.extra-subtitle-date {
+  margin-right: var(--common-preselected-articles-margin-right);
+}
+
+.common-preselected-articles.no-full-header {
+  margin-bottom: 20px;
+}
+
+.common-preselected-articles.white-background.gray-background {
+  background-color: #f2f6f8;
+  padding: 32px 32px 14px;
+  margin-bottom: 48px;
+}
+
+.common-preselected-articles.white-background {
+  background-color: var(--background-color);
+  padding: 0 0 3em;
+}
+
+.common-preselected-articles > :first-child div {
+  display: flex;
+}
+
+.common-preselected-articles > :first-child {
+  margin-bottom: 24px;
+}
+
+.common-preselected-articles.white-background.extra-subtitle-date > :first-child {
+  margin-bottom: 9px;
+}
+
+.common-preselected-articles div div p:first-child {
+  color: var(--button-text-color);
+  min-width: 186px;
+  padding: 0 10px 0 0;
+  margin-block: 0 0;
+  flex: unset;
+  align-self: center;
+  font-family: var(--body-font-family);
+  font-size: 35px;
+  line-height: var(--line-height-l);
+}
+
+.common-preselected-articles div div p:nth-child(2) {
+  display: flex;
+  flex: auto;
+  align-self: center;
+  margin-right: 16px;
+  height: 1px;
+  background-color: var(--button-text-color);
+}
+
+.common-preselected-articles div div p:nth-child(3) {
+  margin: 0;
+  margin-block: 0;
+  display: flex;
+  align-self: center;
+}
+
+.common-preselected-content-ad-container .common-preselected-articles.white-background {
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.common-preselected-articles.no-button div div p:nth-child(3) {
+  display: none;
+}
+
+.common-preselected-articles.white-background div div p:first-child {
+  color: var(--text-color-bold);
+}
+
+.common-preselected-articles.white-background div div p:nth-child(2) {
+  background-color: #e0e0e0;
+}
+
+.common-preselected-articles.no-full-header div div p:nth-child(2),
+.common-preselected-articles.links-attached div div p:nth-child(2) {
+  display: none;
+}
+
+.common-preselected-articles.no-full-header div div p:nth-child(3),
+.common-preselected-articles.links-attached div div p:nth-child(3) {
+  display: none;
+}
+
+.common-preselected-articles div div p:nth-child(3) a {
+  display: flex;
+  background-color: transparent;
+  padding: 0;
+  align-self: center;
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-xxs);
+  line-height: var(--line-height-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  overflow: visible;
+  text-overflow: clip;
+  border-radius: 0;
+  background-image: url('/icons/white-arrow.svg');
+  background-repeat: no-repeat;
+  width: 96px;
+  background-position: 72px -2px;
+  color: var(--button-text-color);
+}
+
+.common-preselected-articles.white-background div div p:nth-child(3) a {
+  color: var(--blue-color);
+  background-image: url('/icons/yellow-arrow.svg');
+  background-position: 116px 2px;
+  width: 139px;
+}
+
+.common-preselected-articles.white-background div div p:nth-child(3) a[title='View All'] {
+  background-position: 75px 2px;
+  width: 96px;
+}
+
+.common-preselected-articles div div p:nth-child(3) a:hover {
+  color: var(--common-preselected-articles-link-color-hover);
+  background-image: url('/icons/hot-topic-arrow.svg');
+  background-position: 74px 2px;
+}
+
+.common-preselected-articles.white-background div div p:nth-child(3) a[title='Alles ansehen']:hover {
+  background-position: 116px 2px;
+}
+
+.common-preselected-articles.white-background div div p:nth-child(3) a[title='View All']:hover {
+  background-position: 75px 2px;
+  width: 96px;
+}
+
+.common-preselected-articles .common-preselected-article-list {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+.common-preselected-articles.white-background .common-preselected-article-list {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  overflow: hidden;
+}
+
+.common-preselected-articles.white-background.extra-subtitle-date .common-preselected-article-list {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.common-preselected-articles.white-background
+  .common-preselected-article-list
+  .common-preselected-article:nth-child(n + 5) {
+  display: none;
+}
+
+.common-preselected-articles.white-background.extra-subtitle-date
+  .common-preselected-article-list
+  .common-preselected-article:nth-child(n + 4) {
+  display: none;
+}
+
+.common-preselected-articles
+  .common-preselected-article-list
+  .common-preselected-article
+  .common-preselected-article-title {
+  line-height: 22px;
+}
+
+.crn-de .common-preselected-articles div div p:nth-child(3) a {
+  width: 137px;
+  background-position: 113px -2px;
+}
+
+.computing-de .common-preselected-articles div div p:nth-child(3) a {
+  width: 137px;
+  background-position: 113px -2px;
+}
+
+.common-preselected-articles.no-images
+  .common-preselected-article-list
+  .common-preselected-article
+  .common-preselected-article-image {
+  display: none;
+}
+
+.common-preselected-articles
+  .common-preselected-article-list
+  .common-preselected-article
+  .common-preselected-article-image
+  img {
+  height: 110px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.common-preselected-articles.extra-subtitle-date
+  .common-preselected-article-list
+  .common-preselected-article
+  .common-preselected-article-date
+  img {
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-right: 2px;
+  width: 14px;
+  height: 14px;
+}
+
+.common-preselected-articles.white-background
+  .common-preselected-article-list
+  .common-preselected-article
+  .common-preselected-article-image
+  img,
+.common-preselected-articles.no-button.white-background
+  .common-preselected-article-list
+  .common-preselected-article
+  .common-preselected-article-image
+  img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.common-preselected-articles.white-background.extra-subtitle-date
+  .common-preselected-article-list
+  .common-preselected-article
+  .common-preselected-article-image
+  img {
+  height: 130px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.common-preselected-articles
+  .common-preselected-article-list
+  .common-preselected-article
+  .common-preselected-article-title
+  a {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-s);
+  line-height: 22px;
+  color: var(--button-text-color);
+}
+
+.common-preselected-articles.white-background.gray-background div div p:nth-child(3) a {
+  background-image: var(--common-preselected-articles-red-arrow);
+  background-position: 113px 2px;
+}
+
+.common-preselected-articles.white-background.extra-subtitle-date div div p:nth-child(3) a {
+  background-image: var(--common-preselected-articles-red-arrow);
+}
+
+.common-preselected-articles.extra-subtitle-date
+  .common-preselected-article-list
+  .common-preselected-article
+  .common-preselected-article-title {
+  margin-bottom: 0.5em;
+}
+
+.common-preselected-articles.extra-subtitle-date
+  .common-preselected-article-list
+  .common-preselected-article
+  .common-preselected-article-category
+  a {
+  font-family: var(--body-font-family);
+  font-weight: bold;
+  font-size: var(--body-font-size-xxs);
+  line-height: var(--line-height-xs);
+  letter-spacing: 0.05em;
+  color: var(--blue-color);
+  margin-bottom: var(--spacing-xs);
+  text-transform: uppercase;
+}
+
+.common-preselected-articles.extra-subtitle-date
+  .common-preselected-article-list
+  .common-preselected-article
+  .common-preselected-article-date {
+  margin-top: auto;
+  font-family: var(--regular-font-size);
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--body-font-size-xxs);
+  line-height: var(--line-height-xs);
+  color: #6f6f6f;
+}
+
+.common-preselected-articles.white-background
+  .common-preselected-article-list
+  .common-preselected-article
+  .common-preselected-article-title
+  a {
+  color: var(--text-color-bold);
+}
+
+.common-preselected-articles
+  .common-preselected-article-list
+  .common-preselected-article
+  .common-preselected-article-title.lock
+  a {
+  &::after {
+    content: var(--lock-svg);
+    margin-left: 3px;
+    margin-bottom: -4px;
+    position: absolute;
+  }
+}
+
+.common-preselected-articles
+  .common-preselected-article-list
+  .common-preselected-article
+  .common-preselected-article-title
+  a:hover {
+  color: var(--common-preselected-articles-link-color-hover);
+}
+
+.computing-de .common-preselected-articles.white-background.gray-background div div p:nth-child(3) a {
+  background-position: 113px 2px;
+}
+
+.computing-de .common-preselected-articles.white-background.extra-subtitle-date div div p:nth-child(3) a {
+  background-position: 116px 2px;
+}
+
+.computing-de .common-preselected-articles.simple-common-preselected div div p:nth-child(3) a:hover,
+.computing-de .common-preselected-articles.no-full-header div div p:nth-child(3) a:hover,
+.computing-de .common-preselected-articles.preselected-resources div div p:nth-child(3) a:hover,
+.computing-de .common-preselected-articles.links-attached div div p:nth-child(3) a:hover {
+  background-image: var(--common-preselected-articles-light-red-arrow);
+  color: var(--common-preselected-articles-link2-color-hover);
+  background-position: 113px 2px;
+}
+
+.crn-de .common-preselected-articles.white-background.gray-background div div p:nth-child(3) a {
+  background-position: 113px 2px;
+}
+
+.crn-de .common-preselected-articles.white-background.extra-subtitle-date div div p:nth-child(3) a {
+  background-position: 116px 2px;
+}
+
+.crn-de .common-preselected-articles.simple-common-preselected div div p:nth-child(3) a:hover,
+.crn-de .common-preselected-articles.no-full-header div div p:nth-child(3) a:hover,
+.crn-de .common-preselected-articles.preselected-resources div div p:nth-child(3) a:hover,
+.crn-de .common-preselected-articles.links-attached div div p:nth-child(3) a:hover {
+  background-image: var(--common-preselected-articles-light-red-arrow);
+  color: var(--common-preselected-articles-link2-color-hover);
+  background-position: 113px 2px;
+}
+
+.common-preselected-articles.extra-subtitle-date
+  .common-preselected-article-list
+  .common-preselected-article
+  .common-preselected-article-category
+  a:hover {
+  color: var(--link-hover-color);
+}
+
+.crn-de
+  .common-preselected-articles.no-full-header
+  .common-preselected-article-list
+  .common-preselected-article
+  .common-preselected-article-title
+  a:hover,
+.crn-de
+  .common-preselected-articles.preselected-resources
+  .common-preselected-article-list
+  .common-preselected-article
+  .common-preselected-article-title
+  a:hover,
+.crn-de
+  .common-preselected-articles.links-attached
+  .common-preselected-article-list
+  .common-preselected-article
+  .common-preselected-article-title
+  a:hover,
+.crn-de
+  .common-preselected-articles.simple-common-preselected
+  .common-preselected-article-list
+  .common-preselected-article
+  .common-preselected-article-title
+  a:hover {
+  color: var(--common-preselected-articles-link2-color-hover);
+}
+
+.computing-de
+  .common-preselected-articles.no-full-header
+  .common-preselected-article-list
+  .common-preselected-article
+  .common-preselected-article-title
+  a:hover,
+.computing-de
+  .common-preselected-articles.preselected-resources
+  .common-preselected-article-list
+  .common-preselected-article
+  .common-preselected-article-title
+  a:hover,
+.computing-de
+  .common-preselected-articles.links-attached
+  .common-preselected-article-list
+  .common-preselected-article
+  .common-preselected-article-title
+  a:hover,
+.computing-de
+  .common-preselected-articles.simple-common-preselected
+  .common-preselected-article-list
+  .common-preselected-article
+  .common-preselected-article-title
+  a:hover {
+  color: var(--common-preselected-articles-link2-color-hover);
+}
+
+.common-preselected-articles.preselected-resources > :first-child div ul {
+  display: none;
+}
+
+.common-preselected-articles.links-attached > :first-child div ul {
+  display: none;
+}
+
+/* media queries */
+@media (width >= 834px) and (width <= 1194px) {
+  .common-preselected-articles {
+    padding-bottom: 48px;
+  }
+}
+
+@media (width >= 900px) {
+  .common-preselected-articles-container > p:first-child {
+    max-width: 1036px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (width <= 768px) {
+  .common-preselected-articles.extra-subtitle-date {
+    margin-right: 0;
+  }
+
+  .common-preselected-articles-container > p:first-child {
+    margin-bottom: 15px;
+  }
+
+  .common-preselected-articles div div p:nth-child(2) {
+    display: none;
+  }
+
+  .common-preselected-articles > :first-child div {
+    justify-content: space-between;
+  }
+
+  .common-preselected-articles .common-preselected-article-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .common-preselected-articles.white-background .common-preselected-article-list {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .common-preselected-articles.white-background.extra-subtitle-date .common-preselected-article-list {
+    grid-template-columns: 1fr;
+  }
+
+  .common-preselected-articles .common-preselected-article-list .common-preselected-article-context-wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .common-preselected-articles.extra-subtitle-date
+    .common-preselected-article-list
+    .common-preselected-article-context-wrapper {
+    display: block;
+  }
+
+  .common-preselected-articles
+    .common-preselected-article-list
+    .common-preselected-article-context-wrapper
+    .common-preselected-article-image {
+    display: inline-block;
+    width: 31%;
+    margin-right: 3%;
+  }
+
+  .common-preselected-articles.extra-subtitle-date
+    .common-preselected-article-list
+    .common-preselected-article-context-wrapper
+    .common-preselected-article-image {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .common-preselected-articles
+    .common-preselected-article-list
+    .common-preselected-article-context-wrapper
+    .common-preselected-article-title {
+    display: inline-block;
+    width: 66%;
+  }
+
+  .common-preselected-articles.no-images
+    .common-preselected-article-list
+    .common-preselected-article-context-wrapper
+    .common-preselected-article-title {
+    padding: 8px 12px;
+  }
+
+  .common-preselected-articles.extra-subtitle-date
+    .common-preselected-article-list
+    .common-preselected-article-context-wrapper
+    .common-preselected-article-title {
+    display: block;
+    width: 100%;
+  }
+
+  .common-preselected-articles
+    .common-preselected-article-list
+    .common-preselected-article
+    .common-preselected-article-image
+    img {
+    width: auto;
+    height: auto;
+  }
+
+  .common-preselected-articles.white-background
+    .common-preselected-article-list
+    .common-preselected-article
+    .common-preselected-article-image
+    img,
+  .common-preselected-articles.white-background.extra-subtitle-date
+    .common-preselected-article-list
+    .common-preselected-article
+    .common-preselected-article-image
+    img {
+    width: 100%;
+    height: auto;
+  }
+
+  .common-preselected-articles.no-button.white-background
+    .common-preselected-article-list
+    .common-preselected-article
+    .common-preselected-article-image
+    img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (width <= 390px) {
+  .common-preselected-articles
+    .common-preselected-article-list
+    .common-preselected-article
+    .common-preselected-article-title.lock
+    a {
+    &::after {
+      position: relative;
+    }
+  }
+}
+
+@media (width <= 575px) {
+  .common-preselected-articles {
+    padding: 16px;
+  }
+
+  .common-preselected-articles div div p:first-child {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .common-preselected-articles div div p:nth-child(3) a {
+    color: transparent;
+    user-select: none;
+  }
+
+  .common-preselected-articles div div p:nth-child(3) a:hover {
+    color: transparent;
+    user-select: none;
+  }
+
+  .common-preselected-articles
+    .common-preselected-article-list
+    .common-preselected-article
+    .common-preselected-article-image
+    img {
+    width: 120px;
+    height: 70px;
+  }
+}
+
+@media (width > 768px) {
+  .common-preselected-articles-wrapper {
+    margin-top: 22px;
+  }
+
+  .common-preselected-articles-wrapper:has(> .white-background) {
+    margin-top: 0;
+  }
+}

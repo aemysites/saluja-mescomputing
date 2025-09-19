@@ -1,0 +1,81 @@
+/* need to figure out why display is set to display none on redner */
+.hot-topics-container {
+  display: block !important;
+}
+
+.hot-topics-wrapper .hot-topics {
+  margin-bottom: -22px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+@media only screen and (width<=1024px) {
+  .hot-topics-wrapper .hot-topics {
+    padding: 0 16px;
+  }
+}
+
+.hot-topics div div ul {
+  max-width: 1036px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 8px 0 0;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.hot-topics div div ul li {
+  font-size: var(--body-font-size-xxs);
+  line-height: 20px;
+  color: #9a9a9a;
+  background-color: var(--button-text-color);
+  padding: 0 10px 0 28px;
+  display: inline;
+  text-align: left;
+  min-height: auto;
+  min-width: auto;
+}
+
+.hot-topics div div ul li a {
+  position: relative;
+  font-family: var(--hot-topics-weight);
+}
+
+.hot-topics div div ul li a::before {
+  content: '';
+  position: absolute;
+  background-color: var(--hot-topics-bullet-color);
+  border-radius: 50%;
+  right: unset;
+  top: 5px;
+  left: -15px;
+  width: 10px;
+  height: 10px;
+}
+
+.hot-topics div div ul li:first-child {
+  font-weight: 700;
+  line-height: 20.16px;
+  text-align: left;
+  text-transform: var(--hot-topics-transform);
+  color: var(--hot-topics-color);
+  width: 90px;
+  padding: 0 3px 0 0;
+  display: inline-block;
+}
+
+@media (width < 1024px) {
+  .hot-topics div div ul {
+    padding-left: 15px;
+  }
+
+  .hot-topics div div ul li:last-child {
+    display: none;
+  }
+}
+
+@media (width <= 575px) {
+  .hot-topics {
+    display: none;
+  }
+}

@@ -1,47 +1,22 @@
-.hero-container .hero-wrapper {
+main .hero-container > div {
   max-width: unset;
+}
+
+main .hero-wrapper {
   padding: 0;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .hero {
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+  min-height: 108px;
+  max-width: 980px;
 }
 
-.hero h1,
-.hero h2,
-.hero h3,
-.hero h4,
-.hero h5,
-.hero h6,
-.hero p {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
-}
-
-.hero.no-image * {
-  color: var(--text-color);
-}
-
-.hero picture {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
-}
-
-.hero img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-@media (width >= 900px) {
-  .hero {
-    padding: 40px 32px;
+@media (width > 1024px) {
+  main .hero-wrapper {
+    margin-left: 0;
+    margin-right: 0;
   }
 }

@@ -1,0 +1,192 @@
+.you-may-also-like.block {
+  margin-bottom: 59px;
+}
+
+.you-may-also-like .title {
+  font-size: 25.63px;
+  color: var(--you-may-also-like-title-color);
+  font-family: var(--you-may-also-like-title-font);
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.you-may-also-like .also-like-card {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 180px;
+}
+
+.you-may-also-like .also-like-card .also-like-card-context {
+  padding: 0 1.25rem 0.1rem 0;
+}
+
+.you-may-also-like .also-like-card .also-like-card-context .also-like-card-category {
+  margin-top: 3px;
+  margin-bottom: 8px;
+}
+
+.you-may-also-like .also-like-card .also-like-card-image {
+  width: 100%;
+}
+
+.you-may-also-like .also-like-card .also-like-card-category a {
+  color: var(--you-may-also-like-category-color);
+  font-size: 15px;
+  line-height: var(--spacing-xs);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-family: var(--you-may-also-like-title-font);
+}
+
+.you-may-also-like .also-like-card .also-like-card-title h4 a {
+  font-size: 22.5px;
+  line-height: 28px;
+  color: var(--you-may-also-like-article-title-color);
+  font-weight: 700;
+}
+
+.you-may-also-like .also-like-card .also-like-card-category a:hover {
+  color: var(--you-may-also-like-hover-color);
+}
+
+.you-may-also-like .also-like-card .also-like-card-title.lock h4 a {
+  position: relative;
+
+  &::after {
+    content: var(--lock-svg);
+    margin-left: 3px;
+    bottom: -5px;
+    position: absolute;
+  }
+}
+
+.you-may-also-like .also-like-card .also-like-card-title h4 {
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+
+.you-may-also-like .also-like-card .also-like-card-title h4 a:hover {
+  color: var(--you-may-also-like-hover-color);
+}
+
+.you-may-also-like .also-like-card .also-like-card-description p {
+  font-size: var(--body-font-size-xxs);
+  line-height: var(--line-height-xs);
+  color: var(--you-may-also-like-article-description-color);
+  margin: 0 0 16px;
+}
+
+.you-may-also-like .also-like-card .also-like-card-date {
+  font-size: 14px;
+  line-height: var(--line-height-s);
+  color: var(--you-may-also-like-article-data-color);
+  display: flex;
+  font-family: var(--regular-font-size);
+  padding-bottom: 5px;
+}
+
+.you-may-also-like .also-like-card .also-like-card-date img {
+  margin-right: 5px;
+}
+
+@media (width > 425px) {
+  .you-may-also-like .also-like-card .also-like-card-image {
+    width: 255px;
+  }
+}
+
+@media (width > 480px) {
+  .you-may-also-like .also-like-card .also-like-card-date {
+    font-size: var(--body-font-size-xxs);
+  }
+}
+
+@media (width > 576px) {
+  .you-may-also-like .also-like-card {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 0;
+  }
+
+  .you-may-also-like .also-like-card .also-like-card-image-wrapper {
+    width: 28%;
+    height: 100%;
+    max-height: 150px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .you-may-also-like .also-like-card .also-like-card-image {
+    height: auto;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .you-may-also-like .also-like-card .also-like-card-context {
+    width: 60.484%;
+    padding: 0 1.25rem 1.25rem 0.9rem;
+  }
+
+  .you-may-also-like .title {
+    margin-bottom: 14px;
+  }
+
+  .you-may-also-like .also-like-card .also-like-card-context .also-like-card-category {
+    margin-top: 0;
+    line-height: 0;
+  }
+}
+
+@media (width > 480px) {
+  .you-may-also-like .title {
+    font-size: var(--body-font-size-xl);
+    margin-bottom: 19px;
+  }
+}
+
+@media (width > 768px) {
+  .you-may-also-like.block {
+    margin-bottom: 30px;
+  }
+
+  .you-may-also-like .title {
+    font-size: var(--body-font-size-xl);
+  }
+}
+
+@media (width > 834px) {
+  .you-may-also-like {
+    margin-bottom: 30px;
+  }
+
+  .you-may-also-like-pagination {
+    margin: 30px 0;
+  }
+}
+
+@media (width > 991px) {
+  .you-may-also-like .also-like-card .also-like-card-image-wrapper {
+    width: 36.8%;
+  }
+
+  .you-may-also-like .also-like-card .also-like-card-context {
+    width: 55.484%;
+  }
+}
+
+@media (width > 1024px) {
+  .you-may-also-like {
+    padding-left: 0;
+    padding-right: 16px;
+  }
+}
+
+@media (width > 1194px) {
+  .you-may-also-like {
+    margin-bottom: 59px;
+  }
+}

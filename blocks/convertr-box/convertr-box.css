@@ -1,0 +1,129 @@
+.section .convertr-box-wrapper {
+  width: 48%;
+  float: left;
+  margin: 1rem 2% 4% 0;
+
+  & .convertr-box-script {
+    display: none;
+  }
+
+  .convertr-box.company {
+    & a {
+      color: var(--convertr-box-link-color);
+      padding: unset;
+      width: unset;
+      background-color: unset;
+      font-family: var(--source-sans);
+      font-size: 20.16px;
+      font-weight: 400;
+      border-radius: unset;
+      line-height: 32px;
+      margin-top: 10px;
+    }
+  }
+
+  .convertr-box .convertr-box-section {
+    & h3 {
+      background: var(--convertr-box-bg-color) none repeat scroll 0 0;
+      color: var(--convertr-box-title-color);
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 700;
+      margin: 0 auto;
+      padding: 6px 10px;
+      position: relative;
+      text-align: left;
+      width: 100%;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: var(--source-sans);
+      line-height: var(--line-height-l);
+      box-sizing: border-box;
+    }
+
+    & table {
+      width: 100%;
+      height: auto;
+      margin-bottom: 24px;
+      border-collapse: collapse;
+
+      & tbody {
+        border: 1px solid var(--convertr-box-bored-color);
+        font-family: var(--regular-font-size);
+        font-size: var(--body-font-size-xxs);
+        line-height: var(--line-height-xs);
+
+        & tr {
+          border-bottom: 1px solid var(--convertr-box-bored-color);
+
+          &:last-child {
+            border-bottom: 0;
+          }
+
+          & td {
+            border-right: 1px solid var(--convertr-box-bored-color);
+            padding: 24px 2%;
+            border-collapse: collapse;
+            vertical-align: top;
+
+            & img {
+              width: 150px;
+              max-width: 150px;
+            }
+
+            &:first-child {
+              width: 68%;
+            }
+
+            & strong {
+              font-weight: bolder;
+
+              a {
+                color: var(--convertr-box-link-color);
+                font-size: 24px;
+                font-family: var(--source-sans);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (width > 412px) {
+  .section .convertr-box-wrapper {
+    .convertr-box .convertr-box-section {
+      & h3 {
+        font-size: 16px;
+      }
+    }
+
+    .convertr-box.company {
+      & a {
+        font-size: var(--body-font-size-xxs);
+        margin-top: unset;
+        padding-top: 10px;
+      }
+    }
+  }
+}
+
+@media (width < 992px) {
+  .section .convertr-box-wrapper {
+    width: 100%;
+    margin: 1rem 0 0;
+  }
+}
+
+@media (width > 992px) {
+  .section .convertr-box-wrapper {
+    .convertr-box .convertr-box-section {
+      & h3 {
+        width: auto;
+        box-sizing: unset;
+      }
+    }
+  }
+}

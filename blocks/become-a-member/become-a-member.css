@@ -1,0 +1,31 @@
+.become-a-member-wrapper .become-a-member {
+  display: none;
+  padding: 18px 66px 14px 19.78px;
+  background: var(--become-member-bg-color);
+  margin-bottom: 24px;
+
+  & a {
+    font-size: var(--body-font-size-s);
+    color: var(--become-member-link-color);
+    font-family: var(--body-font-family);
+    font-weight: 700;
+    line-height: 22px;
+    float: left;
+    padding-left: 16.22px;
+    margin-top: 4px;
+    margin-left: -3px;
+  }
+
+  & span {
+    height: 27px;
+    width: 28px;
+    background-image: var(--become-member-icon);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (width > 768px) {
+  .become-a-member-wrapper .become-a-member {
+    display: inline-flex;
+  }
+}

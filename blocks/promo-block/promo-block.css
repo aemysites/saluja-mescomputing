@@ -1,0 +1,79 @@
+.promo-block-wrapper {
+  background: var(--background-gray-2);
+}
+
+.promo-block-wrapper .promo-block {
+  padding: 0 24px;
+}
+
+.promo-block-wrapper .promo-block div div h3 {
+  text-align: center;
+  padding-top: 28px;
+  line-height: 34px;
+  margin-bottom: -5px;
+}
+
+.promo-block-wrapper .promo-block div div h3 a {
+  color: var(--blue-color);
+  font-size: var(--body-font-size-l);
+  line-height: 34px;
+}
+
+.promo-block-wrapper .promo-block div div p {
+  text-align: center;
+}
+
+.promo-block-wrapper .promo-block .image-div {
+  margin-bottom: -12px;
+}
+
+.promo-block-wrapper .promo-block div div .button-one {
+  border-top: 1px solid #e0e0e0;
+  margin-bottom: -20px;
+}
+
+.promo-block-wrapper .promo-block div div .button-one a {
+  display: none;
+}
+
+.promo-block-wrapper .promo-block div div .button-two {
+  line-height: 22.5px;
+  margin-bottom: -24px;
+}
+
+.promo-block-wrapper .promo-block div div .button-two a {
+  font-size: var(--body-font-size-s);
+  color: var(--text-color-bold);
+  background-color: transparent;
+}
+
+.promo-block-wrapper .promo-block div div .button-three {
+  line-height: 22.5px;
+}
+
+.promo-block-wrapper .promo-block div div .button-three a {
+  font-size: var(--body-font-size-s);
+  color: var(--promo-block-btn-text-color);
+  background-color: var(--promo-block-btn-color);
+  width: 100%;
+  border-radius: 0;
+  padding: 11px;
+}
+
+.promo-block-wrapper .promo-block div div h3 a:hover {
+  color: var(--promo-block-link-hover-color);
+}
+
+.promo-block-wrapper .promo-block div div .button-two a:hover {
+  color: var(--promo-block-link-hover-color);
+}
+
+.promo-block-wrapper .promo-block div div .button-three a:hover {
+  background-color: var(--promo-block-btn-bg-hover);
+}
+
+@media only screen and (width>480px) and (width<767px) {
+  .promo-block-wrapper .promo-block div div .button-three a {
+    width: 16%;
+  }
+}

@@ -1,0 +1,82 @@
+.awards * {
+  margin: 0;
+  padding: 0;
+}
+
+.awards {
+  display: grid;
+  grid-auto-columns: 68% 30%;
+  column-gap: 2%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 25px;
+}
+
+.awards-title {
+  grid-column: span 2;
+  grid-row: 1;
+  margin-bottom: 12px;
+}
+
+.awards-title h2 {
+  color: #1d1d1b;
+  font-size: var(--heading-font-size-xl);
+  line-height: 48px;
+  font-family: var(--heading-font-family);
+}
+
+.awards-image {
+  grid-column: 2;
+  grid-row: 2 / 5;
+  padding: 24px 2%;
+}
+
+.awards-link {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.awards-link div {
+  padding: 24px 2%;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.awards-link a {
+  font-size: 22px;
+  line-height: var(--line-height-xs);
+  color: var(--blue-color);
+  text-decoration: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-family: var(--regular-font-size);
+}
+
+.awards-content {
+  grid-column: 1;
+  grid-row: 3;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.awards-content div {
+  padding: 24px 2%;
+  font-family: var(--regular-font-size);
+  font-size: var(--body-font-size-s);
+  line-height: var(--line-height-m);
+  margin-bottom: 25px;
+}
+
+.awards-previous {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.awards-previous div {
+  padding: 24px 2%;
+}
+
+.awards-previous div a {
+  font-size: var(--body-font-size-s);
+  color: var(--blue-color);
+  text-decoration: none;
+  background-color: transparent;
+}

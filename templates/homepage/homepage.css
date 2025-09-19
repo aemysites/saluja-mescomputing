@@ -1,0 +1,252 @@
+/* stylelint-disable media-feature-range-notation */
+.homepage .content-section {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.top-section {
+  min-height: 170.16px;
+}
+
+.top-ad-container {
+  padding-top: 38px;
+}
+
+.bottom-ad-container div {
+  text-align: center;
+}
+
+.most-read-wrapper {
+  margin-top: 58px;
+}
+
+.upcoming-events {
+  margin-bottom: 89px;
+}
+
+.bottom-banner-ad {
+  margin-bottom: 63px;
+  text-align: center;
+  margin-top: var(--ad-margin-top);
+}
+
+.curtain .curtain {
+  text-align: center;
+}
+
+.crn-de {
+  .common-preselected-articles-wrapper {
+    margin-top: 23px;
+  }
+
+  .upcoming-events-wrapper .upcoming-events {
+    padding-bottom: 0;
+    margin-bottom: 10px;
+  }
+
+  .common-preselected-content-ad-container {
+    margin-top: 42px;
+  }
+
+  .common-preselected-articles.white-background {
+    padding-bottom: 2.2em;
+  }
+}
+
+.computing-de {
+  .common-preselected-articles-wrapper {
+    margin-top: 23px;
+  }
+
+  .upcoming-events-wrapper .upcoming-events {
+    padding-bottom: 0;
+    margin-bottom: 89px;
+  }
+
+  .upcoming-events-container {
+    margin-top: 48px;
+
+    .upcoming-events-wrapper .upcoming-events {
+      padding-bottom: 0;
+    }
+  }
+
+  .common-preselected-content-ad-container {
+    margin-top: 42px;
+  }
+
+  .common-preselected-articles.white-background {
+    padding-bottom: 2.2em;
+  }
+}
+
+.computing-co-uk {
+  .common-preselected-articles-wrapper {
+    margin-top: 20px;
+  }
+
+  .upcoming-events-container {
+    margin-top: 48px;
+
+    .upcoming-events-wrapper .upcoming-events {
+      padding-bottom: 0;
+    }
+  }
+
+  .whitepapers-wrapper {
+    margin-top: 42px;
+  }
+
+  .trendlines {
+    margin-top: 26px;
+    margin-bottom: 9px;
+  }
+
+  .ranked-articles-wrapper {
+    margin-top: 0;
+    margin-bottom: 23px;
+  }
+}
+
+@media (width > 425px) {
+  .homepage .content-section {
+    padding: 0 30px;
+  }
+}
+
+@media (width > 768px) {
+  header {
+    min-height: 176px;
+  }
+}
+
+@media (width > 576px) {
+  .section .article-card-ad-container {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .article-card-ad-container {
+    flex-direction: column;
+  }
+
+  & .right-ad > div {
+    width: auto;
+    text-align: center;
+  }
+
+  .common-preselected-articles-wrapper {
+    margin-top: 48px;
+  }
+}
+
+@media (width > 768px) {
+  .article-card-ad-container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-column-gap: 47px;
+  }
+
+  .right-section {
+    width: 300px;
+    height: auto;
+  }
+
+  .right-ad {
+    box-sizing: border-box;
+  }
+
+  .right-ad > div {
+    width: 280px;
+    text-align: end;
+  }
+
+  .article-card-ad-container .right-ad {
+    padding-top: 47px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .homepage .content-section {
+    padding: unset;
+  }
+
+  .ranked-articles-ad-container,
+  .common-preselected-content-ad-container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-column-gap: 47px;
+  }
+
+  .common-preselected-content-ad-container .common-preselected-articles-wrapper:nth-child(1) {
+    grid-area: 1/1/2/2;
+  }
+
+  .common-preselected-content-ad-container .common-preselected-articles-wrapper:nth-child(2) {
+    grid-area: 2/1/3/2;
+  }
+
+  .common-preselected-content-ad-container .right-cs-section {
+    grid-area: 1/2/3/3;
+  }
+
+  .right-section {
+    width: 300px;
+    height: auto;
+  }
+
+  .right-ad {
+    box-sizing: border-box;
+  }
+
+  .right-ad > div {
+    width: 280px;
+    text-align: end;
+  }
+
+  .most-read-wrapper {
+    margin-top: 46px;
+  }
+}
+
+@media (max-width: 767px) {
+  .ranked-articles-ad-container {
+    flex-direction: column;
+
+    & .right-ad > div {
+      width: auto;
+      text-align: center;
+    }
+  }
+
+  .ranked-articles-wrapper {
+    margin-top: 48px;
+    margin-bottom: 138px;
+  }
+}
+
+@media (min-width: 768px) {
+  .ranked-articles-ad-container {
+    display: flex;
+
+    & .right-ad {
+      box-sizing: border-box;
+      padding-top: 48px;
+    }
+
+    & .right-ad > div {
+      width: 280px;
+      text-align: end;
+    }
+  }
+
+  .homepage.computing-co-uk .ranked-articles-ad-container .right-ad {
+    padding-top: unset;
+  }
+
+  .ranked-articles-wrapper {
+    margin-top: 48px;
+    margin-bottom: 80px;
+  }
+}

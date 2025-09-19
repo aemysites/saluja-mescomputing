@@ -1,0 +1,60 @@
+.convertr-search-wrapper {
+  color: var(--convertr-search-color);
+  padding: 17px 0;
+  border-top: 1px solid var(--convertr-search-border-top-color);
+  border-bottom: 2px solid var(--convertr-search-border-bottom-color);
+}
+
+.convertr-search-wrapper .convertr-search {
+  padding: 50px 30px;
+  text-align: center;
+  background-color: var(--convertr-search-bg-color);
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.convertr-search .convertr-search-form {
+  & h2 {
+    margin-bottom: 17px;
+    color: var(--convertr-search-text-color);
+    font-size: 43.95px;
+    line-height: 48px;
+  }
+
+  & input {
+    padding: 6px 12px;
+    width: 50%;
+    font-size: var(--body-font-size-xxs);
+    vertical-align: middle;
+    line-height: var(--line-height-m);
+    background: var(--background-color);
+    border: 1px solid #c6c6c6;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 46px;
+    outline: none;
+    font-family: var(--regular-font-size);
+  }
+
+  & input:focus {
+    border: 1px solid var(--convertr-search-focus-color);
+  }
+
+  & .btn-primary {
+    padding: 10px 20px;
+    color: var(--convertr-search-button-text-color);
+    width: 100px;
+    font-size: var(--body-font-size-s);
+    line-height: 22.5px;
+    font-family: var(--regular-font-size);
+    margin-bottom: 0;
+    border-radius: unset;
+    background-color: var(--convertr-search-button-color);
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px outset var(--convertr-search-button-color);
+  }
+}

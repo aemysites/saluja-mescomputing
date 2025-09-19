@@ -1,0 +1,45 @@
+/**
+ * Welcome to Cloudflare Workers! This is your first worker.
+ *
+ * - Run "npm run dev" in your terminal to start a development server
+ * - Open a browser tab at http://localhost:8787/ to see your worker in action
+ * - Run "npm run deploy" to publish your worker
+ *
+ * Learn more at https://developers.cloudflare.com/workers/
+ */
+
+
+export default {
+  async fetch(request, env, ctx) {
+    const { searchParams } = new URL(request.url)
+    let url = new URL(searchParams.get('url'));
+
+    const proxyReq = await fetch(url);
+    let textResponse = await proxyReq.text();
+    textResponse = textResponse.replace("document.write('", "");
+    textResponse = textResponse.replace("');", "");
+    // textResponse = decodeURI(textResponse);
+    var r = /\\u([\d\w]{4})/gi;
+    textResponse = textResponse.replace(r, function (match, grp) {
+      return String.fromCharCode(parseInt(grp, 16)); } );
+    textResponse = textResponse.replaceAll('\\/', '/');
+    textResponse = textResponse.replaceAll('\\n', '');
+    textResponse = textResponse.replaceAll('\\r', '');
+    textResponse = textResponse.replaceAll('/static/', '/');
+    textResponse = this.minifyHtml(textResponse);
+
+    return new Response(textResponse, {
+      headers: {
+        'Content-Type': 'text/plain; charset=utf-8',
+        'Access-Control-Allow-Origin': '*',
+        'Content-Encoding': 'gzip'
+      }});
+  },
+  minifyHtml(s) {
+    return s ? s
+        .replace(/\>[\r\n ]+\</g, "><")  // Removes new lines and irrelevant spaces which might affect layout, and are better gone
+        .replace(/(<.*?>)|\s+/g, (m, $1) => $1 ? $1 : ' ')
+        .trim()
+      : ""
+  }
+};

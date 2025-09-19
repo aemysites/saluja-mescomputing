@@ -1,0 +1,99 @@
+.testimonials-wrapper {
+  margin-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.testimonials-wrapper .testimonials > div:first-child div h2 {
+  font-size: 43px;
+  line-height: var(--line-height-l);
+  text-align: center;
+  width: 70%;
+  margin: 63px auto 30px;
+  color: var(--text-color-bold);
+}
+
+.testimonials-wrapper .testimonials .testimonials-row {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.testimonials-wrapper .testimonials .testimonials-row > div div {
+  background: #f2f6f8;
+  padding: 108px 48px 48px;
+  position: relative;
+}
+
+.testimonials-wrapper .testimonials .testimonials-row > div div p {
+  line-height: var(--heading-font-size-l);
+  font-size: var(--body-font-size-s);
+  font-family: var(--regular-font-size);
+  color: var(--text-color-bold);
+  margin: 0;
+}
+
+.testimonials-wrapper .testimonials .testimonials-row > div div h4 {
+  color: var(--blue-color);
+  font-size: 22.5px;
+  line-height: 28px;
+  margin-top: var(--spacing-xs);
+}
+
+.testimonials-wrapper .testimonials .testimonials-row > div div h6 {
+  text-transform: uppercase;
+  font-size: var(--body-font-size-xxs);
+  color: #6f6f6f;
+  font-weight: 700;
+  line-height: var(--line-height-xs);
+  letter-spacing: 1px;
+  font-family: var(--body-font-family);
+}
+
+.testimonials-wrapper .testimonials .testimonials-row > div div::before {
+  content: '';
+  position: absolute;
+  width: 54px;
+  height: 43px;
+  background-image: url('../../icons/testimonials-quotes.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 48px;
+}
+
+.testimonials-wrapper .testimonials .testimonials-row > div:first-child {
+  grid-area: 1/1/2/2;
+}
+
+.testimonials-wrapper .testimonials .testimonials-row > div:last-child {
+  grid-area: 1/2/2/3;
+}
+
+@media (width <= 576px) {
+  .testimonials-wrapper .testimonials > div:first-child div h2 {
+    font-size: 28.83px;
+    line-height: var(--heading-font-size-l);
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .testimonials-wrapper .testimonials .testimonials-row {
+    display: block;
+  }
+
+  .testimonials-wrapper .testimonials .testimonials-row > div div {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .testimonials-wrapper .testimonials .testimonials-row > div:last-child {
+    margin-top: 32px;
+  }
+}
+
+@media (width <= 768px) {
+  .testimonials-wrapper {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,239 @@
+.most-read-wrapper .sidebar {
+  margin-bottom: 16px;
+  background-color: var(--most-read-background-color);
+  padding: var(--most-read-pad-top-bottom) var(--most-read-pad-left-right) var(--most-read-pad-top-bottom);
+}
+
+.most-read-wrapper .most-read-header {
+  font-size: 22.78px;
+  line-height: 27px;
+  margin-top: 10px;
+  font-family: var(--body-font-family);
+  font-weight: bold;
+  margin-bottom: var(--line-height-s);
+  color: var(--most-read-text);
+}
+
+.most-read-wrapper .most-read-results {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.most-read-wrapper .most-read-results .most-read-card {
+  margin-bottom: var(--line-height-xs);
+}
+
+.most-read-wrapper .most-read-card-number {
+  float: left;
+  font-family: var(--body-font-family);
+  font-size: 44px;
+  color: var(--most-read-card-number-color);
+  line-height: 48.35px;
+  font-weight: 700;
+  width: 19%;
+  display: inline-block;
+}
+
+.most-read-wrapper .sidebar .most-read-card-number {
+  color: var(--most-read-sidebar-card-nr-color);
+  width: 19%;
+}
+
+.most-read-wrapper .sidebar .most-read-results .most-read-card {
+  margin-bottom: 24px;
+}
+
+.most-read-wrapper .most-read-card .most-read-card-context {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  width: 70%;
+}
+
+.most-read-wrapper .most-read-card .most-read-card-title {
+  line-height: var(--body-font-size-m);
+  margin-bottom: 0.5rem;
+}
+
+.most-read-wrapper .most-read-card .most-read-card-title a {
+  color: var(--most-read-text);
+  text-decoration: none;
+  background-color: transparent;
+  font-size: var(--body-font-size-s);
+  font-family: var(--body-font-family);
+}
+
+.most-read-wrapper .most-read-card .most-read-card-title.lock a {
+  position: relative;
+
+  &::after {
+    content: var(--lock-svg);
+    margin-left: 3px;
+    bottom: -5px;
+    position: relative;
+  }
+}
+
+.most-read-wrapper .sidebar .most-read-card .most-read-card-title a {
+  line-height: 22px;
+
+  &::after {
+    bottom: -5px;
+  }
+}
+
+.most-read-wrapper .most-read-card .most-read-card-title a:hover {
+  color: var(--most-read-hover);
+}
+
+.most-read-wrapper .most-read-card .most-read-card-date {
+  font-family: var(--regular-font-size);
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--body-font-size-xxs);
+  line-height: var(--line-height-xs);
+  color: var(--most-read-data-color);
+}
+
+.most-read-wrapper .sidebar .most-read-card .most-read-card-context {
+  width: 76.5%;
+}
+
+@media (width > 332px) {
+  .most-read-wrapper .most-read-card .most-read-card-context {
+    width: 77.5%;
+  }
+}
+
+@media (width > 425px) {
+  .most-read-wrapper .most-read.sidebar {
+    padding: var(--most-read-pad) var(--most-read-pad) 0;
+  }
+
+  .most-read-wrapper .most-read-card-number {
+    width: 15%;
+    margin-right: 3.5%;
+  }
+
+  .most-read-wrapper .most-read-card .most-read-card-context {
+    width: 81.5%;
+    padding-left: unset;
+  }
+
+  .most-read-wrapper .most-read-card .most-read-card-title a {
+    line-height: 28px;
+  }
+}
+
+@media (width > 576px) {
+  .most-read-wrapper .most-read-header {
+    font-size: var(--body-font-size-xl);
+    line-height: 44px;
+    margin-bottom: var(--heading-font-size-l);
+  }
+
+  .most-read-wrapper .sidebar .most-read-header {
+    font-size: var(--body-font-size-l);
+    line-height: 34px;
+    margin-bottom: 24px;
+  }
+
+  .most-read-wrapper .most-read-results .most-read-card {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: var(--heading-font-size-xxl);
+  }
+
+  .most-read-wrapper .most-read-card .most-read-card-context {
+    width: 71.5%;
+  }
+}
+
+@media (width > 768px) {
+  .most-read-wrapper .most-read-header {
+    margin-top: 0;
+    margin-bottom: 0;
+    min-width: 186px;
+  }
+
+  .most-read-wrapper .most-read-content {
+    display: flex;
+    margin-bottom: var(--heading-font-size-l);
+  }
+
+  .most-read-wrapper .sidebar .most-read-content {
+    margin-bottom: 0;
+  }
+
+  .most-read-wrapper .most-read-content .most-read-line {
+    display: flex;
+    flex: auto;
+    background: var(--most-read-line-color);
+    height: 1px;
+    align-self: center;
+    margin-right: var(--body-font-size-xs);
+  }
+
+  .most-read-wrapper .sidebar .most-read-content .most-read-line {
+    display: none;
+  }
+
+  .most-read-wrapper .most-read-card-number {
+    width: 26%;
+  }
+
+  .most-read-wrapper .most-read-card .most-read-card-context {
+    width: 60.5%;
+  }
+}
+
+@media (width > 834px) {
+  .most-read-wrapper .most-read-card-number {
+    width: 15%;
+  }
+
+  .most-read-wrapper .most-read-card .most-read-card-context {
+    width: 70%;
+  }
+
+  .most-read-wrapper .sidebar .most-read-card-number {
+    width: 25%;
+  }
+
+  .most-read-wrapper .sidebar .most-read-card .most-read-card-context {
+    width: 70%;
+  }
+}
+
+@media (width > 992px) {
+  .most-read-wrapper .most-read-results .most-read-card {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+
+  .most-read-wrapper .sidebar .most-read-results .most-read-card {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (width > 1024px) {
+  .most-read-wrapper .most-read {
+    padding: 0;
+  }
+}
+
+@media (width > 1195px) {
+  .most-read-wrapper .sidebar .most-read-results .most-read-card {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .most-read-wrapper .sidebar .most-read-card-number {
+    width: 15%;
+  }
+
+  .most-read-wrapper .sidebar .most-read-card .most-read-card-context {
+    width: 81.5%;
+  }
+}

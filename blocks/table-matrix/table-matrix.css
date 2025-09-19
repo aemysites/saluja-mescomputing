@@ -1,0 +1,132 @@
+.table-matrix-wrapper .table-matrix {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-matrix-wrapper .table-matrix .table-row {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #e0e0e0;
+  overflow-x: scroll;
+  word-wrap: break-word;
+}
+
+.table-matrix-wrapper .table-matrix .table-row .table-column {
+  flex: 1 0 50%;
+  color: var(--table-matrix-text-color);
+}
+
+.table-matrix-wrapper .table-matrix .table-row .table-column p {
+  color: var(--black-color);
+  font-size: var(--body-font-size-s);
+  line-height: 34px;
+  margin: 0 0 25px;
+  font-family: var(--regular-font-size);
+}
+
+.table-matrix-wrapper .table-matrix .table-row .table-column strong {
+  color: var(--table-matrix-text-color);
+  font-size: var(--body-font-size-s);
+  line-height: 28px;
+  font-family: var(--body-font-family);
+}
+
+.table-matrix-wrapper .table-matrix .table-row:first-child {
+  font-size: var(--body-font-size-xl);
+  font-family: var(--body-font-family);
+  font-weight: 900;
+  line-height: var(--line-height-l);
+  color: var(--table-matrix-text-color);
+  background-color: #c5c5c5;
+  padding: 24px 21px 36px;
+}
+
+.table-matrix-wrapper .table-matrix .table-row .table-column p:first-child {
+  font-size: var(--body-font-size-l);
+  font-weight: 900;
+  line-height: 34px;
+  color: var(--table-matrix-text-color);
+  font-family: var(--body-font-family);
+  margin: 24px 0 13px;
+}
+
+.table-matrix-wrapper .table-matrix .table-row:nth-child(2) .table-column p {
+  padding: 0 21px;
+}
+
+.table-matrix-wrapper .table-matrix .table-row:nth-child(3) .table-column {
+  padding: 9px 0 30px;
+  margin: 0;
+}
+
+.table-matrix-wrapper .table-matrix .table-row:nth-child(3) .table-column strong {
+  padding: 12px 21px;
+}
+
+.table-matrix-wrapper .table-matrix .table-row:nth-child(4) .table-column p {
+  padding: 0 21px;
+}
+
+.table-matrix-wrapper .table-matrix .table-row:nth-child(6) .table-column p {
+  padding: 24px 21px;
+}
+
+.table-matrix-wrapper .table-matrix .table-row:nth-child(2) .table-column p:last-child {
+  margin-bottom: 50px;
+}
+
+.table-matrix-wrapper .table-matrix .table-row:nth-child(4) .table-column p:last-child {
+  margin-bottom: 50px;
+}
+
+.table-matrix-wrapper .table-matrix .table-row:nth-child(5) .table-column {
+  padding: 9px 0 30px;
+  margin: 0;
+}
+
+.table-matrix-wrapper .table-matrix .table-row:nth-child(5) .table-column strong {
+  padding: 0 21px;
+}
+
+.table-matrix-wrapper .table-matrix .table-row:last-child .table-column {
+  color: var(--table-matrix-total-color);
+  font-family: var(--body-font-family);
+}
+
+.table-matrix-wrapper .table-matrix .table-row:nth-child(2) .table-column:first-child {
+  background-color: var(--table-matrix-first-color);
+}
+
+.table-matrix-wrapper .table-matrix .table-row:nth-child(2) .table-column:last-child {
+  background-color: var(--table-matrix-second-color);
+}
+
+.table-matrix-wrapper .table-matrix .table-row:nth-child(4) .table-column:first-child {
+  background-color: var(--table-matrix-third-color);
+}
+
+.table-matrix-wrapper .table-matrix .table-row:nth-child(4) .table-column:last-child {
+  background-color: var(--table-matrix-fourth-color);
+}
+
+.table-matrix-wrapper .table-matrix .table-row:nth-child(3) .table-column:first-child {
+  border-right: 1px solid #e0e0e0;
+}
+
+.table-matrix-wrapper .table-matrix .table-row:nth-child(5) .table-column:first-child {
+  border-right: 1px solid #e0e0e0;
+}
+
+.table-matrix-wrapper .table-matrix .table-row:last-child {
+  font-size: var(--body-font-size-l);
+  font-weight: 900;
+  line-height: 34px;
+  background-color: #c5c5c5;
+  padding: 24px 21px 36px;
+}
+
+@media (width > 990px) {
+  .table-matrix-wrapper .table-matrix .table-row {
+    overflow-x: unset;
+  }
+}

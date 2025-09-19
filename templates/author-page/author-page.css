@@ -1,0 +1,228 @@
+.author-page-right-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-page-most-read {
+  order: 2;
+}
+
+.middle-section {
+  padding: 0 15px;
+
+  & .article {
+    padding: 0;
+
+    & h1 {
+      margin-top: 0;
+      box-sizing: border-box;
+      font-size: 54px;
+    }
+
+    & h2 {
+      font-size: var(--heading-font-size-xl);
+      line-height: 44px;
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: var(--black-color);
+
+      &:first-of-type {
+        font-family: var(--body-font-family);
+        font-size: var(--body-font-size-xl);
+        color: var(--blue-color);
+        line-height: var(--line-height-l);
+      }
+    }
+
+    & h3 {
+      font-size: var(--body-font-size-xl);
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    & h4 {
+      font-size: var(--body-font-size-s);
+      font-family: var(--regular-font-size);
+      color: var(--text-color-bold);
+      line-height: var(--line-height-m);
+      margin-bottom: 12px;
+    }
+
+    & .sub-heading {
+      font-size: 22px;
+      color: #1d1d1b;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    & p {
+      font-size: var(--body-font-size-s);
+      font-family: var(--regular-font-size);
+      margin-top: 0;
+      color: #1d1d1b;
+      line-height: 32px;
+    }
+
+    & a {
+      color: var(--blue-color);
+      text-decoration: none;
+    }
+
+    & ul {
+      margin: 0;
+    }
+
+    & li {
+      position: relative;
+      font-size: var(--body-font-size-s);
+      font-family: var(--regular-font-size);
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: #1d1d1b;
+      line-height: 32px;
+      list-style: none;
+    }
+
+    & li::before {
+      content: '';
+      position: absolute;
+      left: -15px;
+      top: 13px;
+      width: 8px;
+      height: 8px;
+      background-color: #3f8ac8;
+      border-radius: 50%;
+    }
+
+    & img {
+      vertical-align: middle;
+      width: 100%;
+    }
+  }
+}
+
+.social-heading-bottom > .social {
+  padding-top: 16px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.profile-listing-page .listing-card-title h4 {
+  font-size: 22.5px;
+  line-height: 28px;
+}
+
+.profile-listing-page h4.listing-card-category {
+  margin-top: 0;
+}
+
+.author-page-most-read.most-read-wrapper .most-read-content .most-read-line {
+  display: none;
+}
+
+.author-page-most-read.most-read-wrapper .most-read-card-title a {
+  line-height: 22px;
+}
+
+@media (width <= 991px) {
+  main.grid-layout {
+    display: block;
+  }
+
+  .article.article h1 {
+    font-size: 42px;
+    line-height: 44px;
+    margin-bottom: 23px;
+    color: #1a1919;
+  }
+
+  .right-section {
+    & .right-ad > div {
+      text-align: center;
+    }
+  }
+}
+
+@media (width >= 576px) {
+  .profile-listing-page h1.listing-page-title {
+    font-size: var(--heading-font-size-xl);
+    line-height: 48px;
+  }
+
+  .profile-listing-page h4.listing-card-category,
+  .profile-listing-page .listing-card-title h4,
+  .profile-listing-page div.listing-card-description,
+  .profile-listing-page div.listing-card-date {
+    padding: 0;
+  }
+
+  .author-page-most-read.most-read-wrapper .most-read {
+    padding: 0 45px;
+  }
+
+  .author-page-most-read.most-read-wrapper .most-read .most-read-card-number {
+    width: auto;
+  }
+
+  .author-page-most-read.most-read-wrapper div.most-read-card-context {
+    width: 75%;
+  }
+}
+
+@media (width >= 820px) {
+  .author-page-most-read.most-read-wrapper .most-read-header {
+    font-size: 28.13px;
+    line-height: 34px;
+  }
+
+  .author-page-most-read.most-read-wrapper div.most-read-card {
+    margin-bottom: 24px;
+  }
+}
+
+@media (width >= 992px) {
+  .right-section .right-ad {
+    margin-left: 0;
+  }
+
+  .right-section .right-ad > div {
+    text-align: left;
+  }
+
+  .author-page-most-read.most-read-wrapper {
+    margin-top: 50px;
+  }
+
+  .author-page-most-read .most-read .most-read-results {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .author-page-most-read .most-read div.most-read-card-title a {
+    line-height: 22px;
+  }
+
+  .author-page-most-read .most-read .most-read-results .most-read-card {
+    flex: unset;
+    max-width: unset;
+    margin-bottom: 24px;
+  }
+
+  .author-page-most-read.most-read-wrapper .most-read {
+    padding: 0;
+  }
+}
+
+@media (width < 1025px) {
+  main.grid-layout {
+    padding-left: unset;
+    padding-right: unset;
+  }
+}
+
+@media (width < 426px) {
+  main.grid-layout {
+    padding-left: unset;
+    padding-right: unset;
+  }
+}

@@ -1,0 +1,30 @@
+.follow-us-wrapper .follow-us {
+  padding: 24px;
+  background: var(--follow-us-bg-color);
+  border: none;
+  margin-top: 48px;
+
+  h2 {
+    margin-top: 0;
+    color: var(--follow-us-title-color);
+    font-size: var(--body-font-size-l);
+    line-height: 34px;
+    font-family: var(--body-font-family);
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  p {
+    color: var(--text-color-bold);
+    line-height: 30px;
+
+    a {
+      color: var(--text-color-bold);
+      font-family: var(--body-font-family);
+
+      &:hover {
+        color: var(--follow-us-link-hover-color);
+      }
+    }
+  }
+}

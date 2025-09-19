@@ -1,0 +1,105 @@
+main.grid-layout {
+  display: grid;
+  grid-template-columns: 2.6fr 1.2fr;
+  grid-template-rows: auto auto;
+  /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+  grid-template-areas:
+    'middle-section  right-section'
+    'bottom-section bottom-section';
+  box-sizing: border-box;
+  padding: 0 15px;
+
+  & .curtain {
+    display: none;
+  }
+
+  & .bottom-section {
+    margin-bottom: 150px;
+  }
+}
+
+main.grid-layout.full-width {
+  grid-template-columns: 1fr;
+}
+
+.middle-section {
+  grid-area: middle-section;
+
+  & .top-ad {
+    padding-top: 38px;
+    margin-bottom: 48px;
+  }
+
+  & .top-ad > div {
+    text-align: center;
+  }
+}
+
+.right-section {
+  grid-area: right-section;
+  min-width: 0;
+
+  & .right-ad > div {
+    text-align: center;
+  }
+}
+
+.bottom-section {
+  grid-area: bottom-section;
+
+  & .bottom-ad > div {
+    text-align: center;
+  }
+}
+
+.curtain {
+  grid-area: curtain;
+  padding-top: 48px;
+  margin-bottom: 150px;
+
+  & .curtain > div {
+    text-align: center;
+  }
+}
+
+.top-ad-container {
+  min-height: 128px;
+  padding-top: 38px;
+  margin-bottom: 48px;
+}
+
+@media (width > 425px) {
+  main.grid-layout {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (width > 991px) {
+  .middle-section {
+    padding-right: 15px;
+  }
+
+  main.grid-layout:has(#best-tech-jobs-for-new-starters---q3-2023) {
+    grid-template-columns: 2.6fr 1.3fr;
+  }
+}
+
+@media (width < 992px) {
+  main.grid-layout {
+    display: block;
+  }
+}
+
+@media (width > 1024px) {
+  main.grid-layout {
+    padding-left: unset;
+    padding-right: unset;
+  }
+}
+
+@media (width < 1025px) {
+  .top-ad-container {
+    min-height: unset;
+  }
+}

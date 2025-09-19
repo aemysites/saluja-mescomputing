@@ -1,0 +1,76 @@
+.convertr-company-listing {
+  & h1 {
+    margin-bottom: 12px;
+    color: var(--convertr-scompany-text-color);
+    font-size: 68.66px;
+    line-height: 76px;
+  }
+
+  & .cvtr-wp-advertiser {
+    border-top: 1px solid #3b7c8e;
+  }
+
+  & .cvtr-wp-advertiser-name h2 {
+    margin-bottom: 12px;
+    color: var(--convertr-company-text-color);
+    font-size: 43.95px;
+    line-height: 48px;
+    margin-top: unset;
+  }
+
+  & table tbody tr td img {
+    display: none;
+    visibility: hidden;
+  }
+
+  & .cvtr-wp-advertiser-logo {
+    float: right;
+    line-height: 0;
+
+    & img {
+      height: auto;
+      max-width: 150px;
+      width: 150px;
+    }
+  }
+
+  & table {
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+
+    & tbody {
+      border: 1px solid var(--convertr-company-border-color);
+      font-family: var(--regular-font-size);
+      font-size: var(--body-font-size-xxs);
+      line-height: var(--line-height-xs);
+
+      & tr {
+        border-bottom: 1px solid var(--convertr-company-border-color);
+        border-right: 2px solid var(--convertr-company-border-color);
+
+        & td {
+          padding: 24px 2%;
+
+          & div {
+            color: var(--convertr-company-description-color);
+          }
+
+          & a {
+            color: var(--convertr-company-link-color);
+            font-weight: bolder;
+          }
+        }
+
+        & td:last-child {
+          border-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.convertr-company-listing-container > div > div > div > div > p > a {
+  display: none !important;
+}

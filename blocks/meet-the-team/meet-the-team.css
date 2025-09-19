@@ -1,0 +1,98 @@
+.meet-the-team-wrapper .meet-the-team > div:nth-child(n + 2) {
+  margin-bottom: 24px;
+}
+
+.meet-the-team-wrapper .meet-the-team div div h3 {
+  font-size: 23px;
+  line-height: 27px;
+  color: #1d1b1b;
+  margin-bottom: var(--spacing-s);
+}
+
+.meet-the-team-wrapper .meet-the-team div div h4 {
+  font-size: var(--heading-font-size-s) !important;
+  line-height: 28px !important;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 8px;
+  color: #1d1b1b;
+  margin-bottom: 24px;
+}
+
+.meet-the-team-wrapper .meet-the-team div div h5,
+.meet-the-team-wrapper .meet-the-team div div p {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.meet-the-team-wrapper .meet-the-team div div h5 {
+  font-size: var(--heading-font-size-s);
+  line-height: 28px;
+  color: var(--blue-color);
+  font-weight: 700;
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+
+.meet-the-team-wrapper .meet-the-team .meet-the-team-image {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.meet-the-team-wrapper .meet-the-team div div p {
+  margin-top: 0;
+}
+
+.meet-the-team-wrapper .meet-the-team div div p br {
+  display: none;
+}
+
+.meet-the-team-wrapper .meet-the-team div div p:first-of-type {
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--text-color-gray-1);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+
+.meet-the-team-wrapper .meet-the-team div div h6 {
+  font-size: var(--heading-font-size-xs);
+  line-height: var(--line-height-m);
+  color: var(--text-color-bold);
+  font-family: var(--regular-font-size);
+  padding-left: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.meet-the-team-wrapper .meet-the-team div div p:nth-of-type(2) {
+  font-size: var(--body-font-size-s);
+  line-height: var(--line-height-m);
+  color: var(--text-color-bold);
+  margin-bottom: 0;
+}
+
+.meet-the-team-wrapper .meet-the-team div div p:nth-of-type(2) a {
+  color: var(--text-color-bold);
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.meet-the-team-wrapper .meet-the-team div div p:nth-of-type(2) a:hover,
+.meet-the-team-wrapper .meet-the-team div div p:nth-of-type(2) a:active {
+  text-decoration: none;
+  color: var(--meet-the-team-link-hover);
+}
+
+@media (width <= 991px) {
+  .meet-the-team-wrapper {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .sidebar .meet-the-team-wrapper {
+    padding-right: unset;
+    padding-left: unset;
+  }
+}

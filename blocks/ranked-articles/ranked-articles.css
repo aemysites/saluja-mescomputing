@@ -1,0 +1,361 @@
+.ranked-articles-wrapper {
+  background: var(--ranked-articles-bg-color);
+  width: 100%;
+}
+
+.ranked-articles-wrapper .ranked-articles {
+  background: var(--ranked-articles-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 16px;
+  font-family: var(--body-font-family);
+}
+
+.ranked-articles-wrapper .ranked-articles .ranked-articles-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+@media only screen and (width<=576px) {
+  .ranked-articles-wrapper .ranked-articles .ranked-articles-text {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin: 0;
+  }
+}
+
+.ranked-articles-wrapper .ranked-articles .ranked-articles-text .ranked-articles-left {
+  font-size: 22.78px;
+  font-weight: 700;
+  line-height: 27px;
+  color: var(--text-color-bold);
+  text-align: left;
+  padding: 0 30px;
+}
+
+@media only screen and (width>=576px) and (width<=767px) {
+  .ranked-articles-wrapper .ranked-articles .ranked-articles-text .ranked-articles-left {
+    font-size: 25.63px;
+    line-height: var(--line-height-l);
+  }
+}
+
+@media only screen and (width>=768px) {
+  .ranked-articles-wrapper .ranked-articles .ranked-articles-text .ranked-articles-left {
+    font-size: var(--body-font-size-xl);
+  }
+}
+
+.ranked-articles-wrapper .ranked-articles .ranked-articles-text .ranked-articles-right {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding-right: 35px;
+}
+
+@media only screen and (width <= 768px) {
+  .ranked-articles-wrapper .ranked-articles .ranked-articles-text .ranked-articles-right {
+    gap: 35px;
+  }
+}
+
+.ranked-articles-wrapper .ranked-articles .ranked-articles-text .ranked-articles-right .ranked-articles-view {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ranked-articles-wrapper .ranked-articles .ranked-articles-text .ranked-articles-right .ranked-articles-arrow a img {
+  font-size: 10px;
+}
+
+.ranked-articles-wrapper .ranked-articles .ranked-articles-text .ranked-articles-right .ranked-articles-view a {
+  font-size: var(--body-font-size-xxs);
+  font-family: var(--body-font-family);
+  color: var(--blue-color);
+  font-weight: 700;
+  letter-spacing: 0.72px;
+  line-height: 20.16px;
+}
+
+.ranked-articles-wrapper .ranked-articles .ranked-articles-text .ranked-articles-right .ranked-articles-view a:hover {
+  color: var(--ranked-articles-link-hover-color);
+}
+
+@media only screen and (width<=576px) {
+  .ranked-articles-wrapper .ranked-articles .ranked-articles-text .ranked-articles-right .ranked-articles-view {
+    display: none;
+  }
+}
+
+.ranked-articles-wrapper .ranked-articles .wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0 32px 20px;
+}
+
+@media only screen and (width>= 576px) {
+  .ranked-articles-wrapper .ranked-articles .wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .ranked-articles-wrapper .ranked-articles .wrap .ranked-articles {
+    width: calc(50% - 16px);
+    padding-right: 16px;
+  }
+}
+
+.ranked-articles-wrapper .ranked-articles .wrap .ranked-articles .ranked-articles-context-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.ranked-articles-wrapper
+  .ranked-articles
+  .wrap
+  .ranked-articles
+  .ranked-articles-context-wrapper
+  .ranked-articles-image {
+  flex: 1;
+  width: 100%;
+}
+
+.ranked-articles-wrapper
+  .ranked-articles
+  .wrap
+  .ranked-articles
+  .ranked-articles-context-wrapper
+  .ranked-articles-image
+  a
+  img {
+  justify-content: center;
+  align-items: center;
+  padding-right: 30px;
+  object-fit: cover;
+}
+
+.ranked-articles-wrapper .ranked-articles .wrap .ranked-articles .ranked-articles-context-wrapper .text-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 7px;
+  flex: 3;
+}
+
+.ranked-articles-wrapper
+  .ranked-articles
+  .wrap
+  .ranked-articles
+  .ranked-articles-context-wrapper
+  .text-wrap
+  .ranked-articles {
+  padding-bottom: 24px;
+}
+
+.ranked-articles-wrapper
+  .ranked-articles
+  .wrap
+  .ranked-articles
+  .ranked-articles-context-wrapper
+  .ranked-articles-title {
+  line-height: 22px;
+  margin-top: -4px;
+  font-size: var(--body-font-size-s);
+}
+
+.ranked-articles-wrapper
+  .ranked-articles
+  .wrap
+  .ranked-articles
+  .ranked-articles-context-wrapper
+  .ranked-articles-title
+  a {
+  font-weight: 700;
+  color: var(--text-color-bold);
+}
+
+.ranked-articles-wrapper
+  .ranked-articles
+  .wrap
+  .ranked-articles
+  .ranked-articles-context-wrapper
+  .ranked-articles-author
+  a {
+  font-size: var(--body-font-size-xxs);
+  font-weight: 700;
+  line-height: var(--line-height-xs);
+  color: var(--blue-color);
+}
+
+.ranked-articles-wrapper
+  .ranked-articles
+  .wrap
+  .ranked-articles
+  .ranked-articles-context-wrapper
+  .ranked-articles-title.lock
+  a {
+  position: relative;
+
+  &::after {
+    content: var(--lock-svg);
+    margin-left: 3px;
+    bottom: -5px;
+    position: relative;
+  }
+}
+
+.ranked-articles-wrapper
+  .ranked-articles
+  .wrap
+  .ranked-articles
+  .ranked-articles-context-wrapper
+  .ranked-articles-title
+  a:hover {
+  color: var(--ranked-articles-link-hover-color);
+}
+
+.ranked-articles-wrapper
+  .ranked-articles
+  .wrap
+  .ranked-articles
+  .ranked-articles-context-wrapper
+  .ranked-articles-author
+  a:hover {
+  color: var(--ranked-articles-link-hover-color);
+}
+
+.ranked-articles-wrapper
+  .ranked-articles
+  .wrap
+  .ranked-articles
+  .ranked-articles-context-wrapper
+  .ranked-articles-date {
+  color: #6f6f6f;
+  font-size: var(--body-font-size-xxs);
+  line-height: var(--line-height-xs);
+  font-family: var(--regular-font-size);
+}
+
+@media only screen and (width>=577px) and (width<=1024px) {
+  .ranked-articles-wrapper .ranked-articles .wrap .ranked-articles .ranked-articles-context-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ranked-articles-wrapper
+    .ranked-articles
+    .wrap
+    .ranked-articles
+    .ranked-articles-context-wrapper
+    .ranked-articles-image {
+    flex: 1;
+    width: 100%;
+  }
+
+  .ranked-articles-wrapper
+    .ranked-articles
+    .wrap
+    .ranked-articles
+    .ranked-articles-context-wrapper
+    .ranked-articles-image
+    a
+    img {
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .ranked-articles-wrapper .ranked-articles .wrap .ranked-articles .ranked-articles-context-wrapper .text-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 7px;
+    flex: 3;
+  }
+}
+
+@media only screen and (width<=576px) {
+  .ranked-articles-wrapper
+    .ranked-articles
+    .wrap
+    .ranked-articles
+    .ranked-articles-context-wrapper
+    .ranked-articles-image
+    a
+    img {
+    height: 64px;
+    width: 64px;
+  }
+}
+
+@media only screen and (width>=577px) and (width<=767px) {
+  .ranked-articles-wrapper
+    .ranked-articles
+    .wrap
+    .ranked-articles
+    .ranked-articles-context-wrapper
+    .ranked-articles-image
+    a
+    img {
+    padding-right: 0;
+    max-width: 46px;
+    min-height: 40px;
+    max-height: 46px;
+  }
+}
+
+@media only screen and (width>=768px) and (width<=899px) {
+  .ranked-articles-wrapper
+    .ranked-articles
+    .wrap
+    .ranked-articles
+    .ranked-articles-context-wrapper
+    .ranked-articles-image
+    a
+    img {
+    width: 40px;
+    min-height: 37px;
+    max-height: 40px;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (width>=900px) and (width<=1023px) {
+  .ranked-articles-wrapper
+    .ranked-articles
+    .wrap
+    .ranked-articles
+    .ranked-articles-context-wrapper
+    .ranked-articles-image
+    a
+    img {
+    width: 52px;
+    min-height: 48px;
+    max-height: 52px;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (width>=1024px) {
+  .ranked-articles-wrapper
+    .ranked-articles
+    .wrap
+    .ranked-articles
+    .ranked-articles-context-wrapper
+    .ranked-articles-image
+    a
+    img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    padding-right: 0;
+  }
+}

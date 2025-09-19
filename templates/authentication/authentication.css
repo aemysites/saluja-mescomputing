@@ -1,0 +1,297 @@
+main.grid-layout:has(.loginform-container),
+main.grid-layout:has(.resetpassword-container) {
+  display: block;
+}
+
+.authentication {
+  .bottom-section {
+    display: none;
+  }
+
+  .curtain {
+    margin-bottom: 3rem;
+    margin-top: unset;
+    padding-top: unset;
+  }
+}
+
+.resetpassword-container {
+  .error-message {
+    text-transform: lowercase;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  }
+
+  .resetpassword-wrapper {
+    display: grid;
+  }
+
+  p {
+    font-family: var(--regular-font-size);
+    font-size: 14.4px;
+    line-height: 20.16px;
+    font-style: normal;
+    color: #6f6f6f;
+    margin: 0 0 20px;
+  }
+
+  .send-email-message {
+    margin: 2% 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 180%;
+    font-family: var(--regular-font-size);
+    color: #ea3333;
+  }
+
+  &:has(.send-email-message) .authenticationform .default-content-wrapper p {
+    display: none;
+  }
+}
+
+.loginform-container {
+  .error-message {
+    text-transform: unset;
+    margin: 2% 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 180%;
+    font-family: var(--regular-font-size);
+    color: #ea3333;
+  }
+}
+
+.loginform-container,
+.resetpassword-container {
+  h1 {
+    font-weight: 600;
+    margin-bottom: 32px;
+    font-size: var(--body-font-size-l);
+    line-height: 34px;
+  }
+
+  .error-message {
+    margin: 2% 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 180%;
+    font-family: var(--regular-font-size);
+    color: #ea3333;
+  }
+
+  .group-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    label {
+      font-size: var(--body-font-size-s);
+      line-height: var(--heading-font-size-l);
+      color: var(--text-color-bold);
+      font-weight: 600;
+      font-family: var(--semibold-font-family);
+      margin-bottom: 0;
+    }
+
+    input {
+      font-size: var(--body-font-size-s);
+      line-height: var(--line-height-m);
+      background: white;
+      border: 1px solid #c6c6c6;
+      box-sizing: border-box;
+      border-radius: 4px;
+      padding: 8px 12px;
+      font-family: var(--regular-font-size);
+      outline: none;
+
+      &:focus {
+        border: 1px solid var(--login-input-focus-color);
+      }
+
+      &:active {
+        border: 1px solid var(--login-input-focus-color);
+      }
+    }
+  }
+
+  .sign-in-btn,
+  .reset-password-btn {
+    line-height: 22px;
+    font-size: var(--body-font-size-s);
+    background-color: var(--login-btn-bg-color);
+    border-color: var(--login-btn-bg-color);
+    padding: 11px;
+    color: var(--login-btn-text-color);
+    border-radius: unset;
+    margin-top: 0;
+    float: right;
+    width: auto;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: var(--login-btn-bg-hover-color);
+      border-color: var(--login-btn-bg-hover-color);
+      color: var(--login-btn-hover-text-color);
+    }
+  }
+
+  .forgot-password a {
+    color: var(--text-color-bold);
+    text-decoration: none;
+    background-color: transparent;
+    font-size: var(--body-font-size-xxs);
+    line-height: 20.16px;
+
+    &:hover {
+      text-decoration: none;
+      color: var(--login-link-color);
+    }
+  }
+
+  .form-actions {
+    font-size: var(--body-font-size-s);
+    line-height: var(--line-height-m);
+    color: var(--text-color-bold);
+    font-weight: 600;
+    font-family: var(--semibold-font-family);
+    margin-bottom: 0;
+
+    .remember-me {
+      margin: 8px 11px 8px 0;
+    }
+  }
+
+  .default-content-wrapper:has(h4) {
+    padding: 24px 16px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--login-connect-bg-color);
+
+    h4 {
+      font-size: 22.5px;
+      line-height: 28px;
+      font-family: var(--body-font-family);
+      font-weight: 700;
+      color: var(--blue-color);
+      margin-bottom: 4px;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: var(--body-font-size-s);
+      line-height: var(--line-height-m);
+      color: var(--text-color-bold);
+      margin-bottom: 15px;
+      margin-top: 0;
+
+      &:last-child {
+        margin-bottom: 40px;
+        word-wrap: break-word;
+      }
+    }
+  }
+}
+
+@media (width > 576px) {
+  .loginform-container,
+  .resetpassword-container {
+    .default-content-wrapper:has(h4) {
+      padding: 24px 32px;
+    }
+
+    .default-content-wrapper:has(#sign-in-to-your-account),
+    .default-content-wrapper:has(#reset-password) {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .loginform-wrapper,
+    .resetpassword-wrapper {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (width > 700px) {
+  .loginform-container,
+  .resetpassword-container {
+    .default-content-wrapper:has(#sign-in-to-your-account),
+    .default-content-wrapper:has(#reset-password) {
+      width: 50%;
+    }
+
+    .loginform-wrapper,
+    .resetpassword-wrapper {
+      width: 50%;
+    }
+  }
+}
+
+@media (width > 767px) {
+  .loginform-container,
+  .resetpassword-container {
+    .authenticationform {
+      margin-bottom: -4px;
+    }
+
+    .default-content-wrapper:has(h4) {
+      p {
+        margin-bottom: 0;
+
+        &:last-child {
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media (width > 900px) {
+  .loginform-container,
+  .resetpassword-container {
+    .default-content-wrapper:has(h4) {
+      width: unset;
+      height: max-content;
+    }
+  }
+}
+
+@media (width > 991px) {
+  .loginform-container {
+    .default-content-wrapper:has(h4) {
+      margin-top: 103px;
+    }
+  }
+
+  .resetpassword-container {
+    .default-content-wrapper:has(h4) {
+      margin-top: 67px;
+    }
+  }
+
+  .authentication-container {
+    display: grid !important;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto auto;
+    box-sizing: border-box;
+    gap: 30px;
+
+    .default-content-wrapper:has(h4) {
+      padding: 24px 4.73%;
+    }
+
+    .default-content-wrapper:has(#sign-in-to-your-account),
+    .default-content-wrapper:has(#reset-password) {
+      width: 100%;
+    }
+
+    .loginform-wrapper,
+    .resetpassword-wrapper {
+      width: 100%;
+    }
+  }
+}

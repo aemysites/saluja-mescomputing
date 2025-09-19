@@ -1,0 +1,200 @@
+.default-content-wrapper:has(#author-profile) {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+h1#author-profile {
+  font-size: 34.44px;
+  line-height: 60px;
+  font-family: var(--heading-font-family);
+  font-style: normal;
+  font-weight: bold;
+  margin: 0 0 0.5rem;
+}
+
+.default-content-wrapper:has(#author-profile) p:has(picture) {
+  margin: 0;
+}
+
+.default-content-wrapper:has(#author-profile) p:has(picture) img {
+  border-radius: 50%;
+  clip-path: circle();
+  width: 35%;
+}
+
+h4 {
+  font-family: var(--heading-font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 33.44px;
+  padding-top: 1.25rem;
+  line-height: 36px;
+  color: var(--article-author-color);
+  margin: 0 0 8px;
+}
+
+.default-content-wrapper:has(#author-profile) p.author-position {
+  font-family: var(--heading-font-family);
+  font-size: var(--body-font-size-xxs);
+  line-height: var(--line-height-xs);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0 0 24px;
+  color: #6f6f6f;
+  font-weight: 700;
+}
+
+.default-content-wrapper:has(#author-profile) p.author-about {
+  font-size: 18px;
+  line-height: var(--line-height-m);
+  font-family: var(--regular-font-size);
+  color: var(--text-color-bold);
+  margin: 0 0 24px;
+  font-weight: 400;
+}
+
+.default-content-wrapper:has(#author-profile) p.author-follow {
+  margin: 0 0 8px;
+  font-size: var(--body-font-size-xxs);
+  line-height: var(--line-height-xs);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--article-author-color);
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+}
+
+.default-content-wrapper:has(#author-profile) ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.default-content-wrapper:has(#author-profile) ul li {
+  margin-right: 8px;
+}
+
+.default-content-wrapper:has(#author-profile) ul li a {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+
+.default-content-wrapper:has(#author-profile) ul li a.author-linkedin {
+  background: var(--article-author-icon-linkdin) no-repeat;
+}
+
+.default-content-wrapper:has(#author-profile) ul li a.author-twitter {
+  background: var(--article-author-icon-twitter) no-repeat;
+}
+
+.default-content-wrapper:has(#author-profile) ul li a.author-facebook {
+  background: var(--article-author-icon-facebook) no-repeat;
+}
+
+/* Listing section */
+.profile-listing-page h1.listing-page-title {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.profile-listing-page h4.listing-card-category,
+.profile-listing-page div.listing-card-title h4 {
+  padding-top: 0;
+}
+
+@media (width>=426px) {
+  .default-content-wrapper:has(#author-profile) {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+}
+
+@media (width>=576px) {
+  .default-content-wrapper:not(:has(.author-image)) {
+    grid-template-columns: 0 100% !important;
+  }
+
+  .default-content-wrapper:has(#author-profile) {
+    display: grid;
+    grid-template-columns: 28% 60.5%;
+  }
+
+  h1#author-profile {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    font-size: 54.93px;
+  }
+
+  .default-content-wrapper:has(#author-profile) p {
+    grid-column: 2;
+    padding: 0 1.25rem;
+  }
+
+  .default-content-wrapper:has(#author-profile) p:has(picture) {
+    grid-column: 1;
+    grid-row: 2 / 10;
+  }
+
+  .default-content-wrapper:has(#author-profile) p:has(picture) img {
+    width: 100%;
+    margin-top: 48px;
+  }
+
+  h4 {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 42.64px;
+    line-height: 60px;
+    padding: 0 1.25rem;
+    margin-top: 48px;
+  }
+
+  .default-content-wrapper:has(#author-profile) p.author-position {
+    margin: 0 0 32px;
+  }
+
+  ul {
+    grid-column: 2;
+  }
+
+  .default-content-wrapper:has(#author-profile) ul {
+    padding: 0 1.25rem;
+  }
+
+  .default-content-wrapper:has(#author-profile) ul li {
+    margin-right: 16px;
+  }
+}
+
+@media (width>=820px) {
+  .default-content-wrapper:not(:has(.author-image)) {
+    grid-template-columns: 0 100% !important;
+  }
+
+  .default-content-wrapper:has(#author-profile) {
+    grid-template-columns: 34% 60.5%;
+  }
+}
+
+@media (width>=992px) {
+  .default-content-wrapper:not(:has(.author-image)) {
+    grid-template-columns: 0 100% !important;
+  }
+
+  .default-content-wrapper:has(#author-profile) {
+    display: grid;
+    grid-template-columns: 37% 60.5%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .default-content-wrapper:has(#author-profile) p:has(picture) {
+    padding: 0;
+  }
+
+  .default-content-wrapper:has(#author-profile) p:has(picture) img {
+    width: 250px;
+  }
+}

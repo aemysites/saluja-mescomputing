@@ -1,0 +1,213 @@
+.more-on {
+  margin-bottom: 59px;
+}
+
+.more-on .title {
+  font-size: var(--body-font-size-xl);
+  line-height: var(--line-height-l);
+  padding-bottom: 16px;
+  padding-top: 0;
+  font-family: var(--body-font-family);
+}
+
+.more-on .more-on-card {
+  padding-bottom: 59px;
+}
+
+.more-on .more-on-card .more-on-card-context .more-on-card-category {
+  margin-top: 0;
+  margin-bottom: 5px;
+  line-height: var(--line-height-s);
+}
+
+.more-on .more-on-card .more-on-card-image {
+  width: 100%;
+}
+
+.more-on .more-on-author-name a {
+  font-size: var(--body-font-size-xs);
+  line-height: var(--line-height-xs);
+  color: var(--more-on-category-author-color);
+  font-family: var(--body-font-family);
+}
+
+.more-on .more-on-author-name a:hover {
+  color: var(--more-on-hover-color);
+}
+
+.more-on .more-on-card .more-on-card-category a {
+  color: var(--more-on-category-author-color);
+  font-size: 15px;
+  line-height: var(--spacing-xs);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-family: var(--body-font-family);
+}
+
+.more-on .more-on-card .more-on-card-title h4 a {
+  font-size: 20.25px;
+  line-height: 28px;
+  color: var(--more-on-title-color);
+  font-weight: 700;
+}
+
+.more-on .more-on-card .more-on-card-category a:hover {
+  color: var(--more-on-hover-color);
+}
+
+.more-on .more-on-card .more-on-card-title.lock h4 a {
+  position: relative;
+
+  &::after {
+    content: var(--lock-svg);
+    margin-left: 3px;
+    bottom: -5px;
+    position: absolute;
+  }
+}
+
+.more-on .more-on-card .more-on-card-title h4 {
+  margin-bottom: 7px;
+  margin-top: 0;
+  line-height: 28px;
+}
+
+.more-on .more-on-card .more-on-card-title h4 a:hover {
+  color: var(--more-on-hover-color);
+}
+
+.more-on .more-on-card .more-on-card-description p {
+  font-size: var(--body-font-size-xs);
+  line-height: var(--line-height-s);
+  color: var(--more-on-article-description-data-color);
+  margin: 0 0 18px;
+}
+
+.more-on .more-on-card-author {
+  display: flex;
+  line-height: 1;
+}
+
+.more-on .more-on-author-name {
+  line-height: 1;
+}
+
+.more-on .more-on-author-image {
+  margin-right: 10px;
+  border-radius: 50%;
+  height: 26px;
+  width: 26px;
+}
+
+.more-on .more-on-card .more-on-card-date {
+  font-size: 14px;
+  line-height: var(--line-height-s);
+  color: var(--more-on-article-description-data-color);
+  display: flex;
+  font-family: var(--regular-font-size);
+  padding-bottom: 5px;
+}
+
+.more-on .more-on-card .more-on-card-date img {
+  margin-right: 5px;
+}
+
+.more-on .more-on-card .more-on-article-details {
+  margin-top: auto;
+}
+
+@media (width > 480px) {
+  .more-on .more-on-card .more-on-card-description p {
+    font-size: var(--body-font-size-xxs);
+  }
+
+  .more-on .more-on-author-name a {
+    font-size: var(--body-font-size-xxs);
+  }
+
+  .more-on .more-on-card .more-on-card-category a {
+    font-size: var(--body-font-size-xxs);
+  }
+
+  .more-on .more-on-card .more-on-card-title h4 a {
+    font-size: 22.5px;
+  }
+
+  .more-on .more-on-card .more-on-card-date {
+    font-size: var(--body-font-size-xxs);
+  }
+}
+
+@media (width > 576px) {
+  .more-on .more-on-card {
+    display: flex;
+    padding-bottom: 16px;
+  }
+
+  .more-on .title {
+    padding-bottom: 25px;
+  }
+
+  .more-on .more-on-card .more-on-card-context .more-on-card-category {
+    line-height: 0;
+  }
+
+  .more-on .more-on-card .more-on-card-image-wrapper {
+    width: 33.199%;
+    margin-right: 2%;
+  }
+
+  .more-on .more-on-card .more-on-card-context {
+    width: 64.801%;
+    padding: 0 6px 40px;
+  }
+
+  .more-on .more-on-card .more-on-card-description p {
+    line-height: 20.16px;
+  }
+}
+
+@media (width > 700px) {
+  .more-on .more-on-card .more-on-card-context {
+    padding: 10px 0 24px;
+  }
+}
+
+@media (width > 768px) {
+  .more-on.block {
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 24px;
+  }
+
+  .more-on .more-on-wrapper {
+    display: flex;
+  }
+
+  .more-on .more-on-card {
+    flex-direction: column;
+    width: 33.33%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .more-on .more-on-card:first-child {
+    padding-left: 0;
+  }
+
+  .more-on .more-on-card:last-child {
+    padding-right: 0;
+  }
+
+  .more-on .more-on-card .more-on-card-image-wrapper {
+    width: unset;
+  }
+
+  .more-on .more-on-card .more-on-card-context {
+    width: unset;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+}

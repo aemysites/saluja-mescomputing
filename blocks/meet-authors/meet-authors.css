@@ -1,0 +1,51 @@
+.title-div {
+  font-family: var(--body-font-family);
+  font-size: var(--heading-font-size-xl);
+  line-height: var(--line-height-xl);
+  color: var(--nero-color);
+  padding-bottom: 12px;
+  font-weight: 700;
+}
+
+.meet-authors-context-wrapper {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.meet-authors-context-wrapper .meet-authors-image {
+  float: left;
+  padding: 0 10px 0 0;
+  width: 100px;
+  height: 100px;
+}
+
+.meet-authors-context-wrapper .meet-authors-image a img {
+  border-radius: 50%;
+}
+
+.meet-authors-context-wrapper .name-description {
+  width: 100%;
+}
+
+.meet-authors-context-wrapper .meet-authors-name {
+  padding-bottom: 10px;
+  font-size: var(--body-font-size-l);
+  font-family: var(--body-font-family);
+  line-height: 34px;
+  color: var(--nero-color);
+}
+
+.meet-authors-context-wrapper .meet-authors-description {
+  width: 100%;
+  font-family: var(--regular-font-size);
+  font-size: var(--body-font-size-s);
+  line-height: var(--line-height-m);
+}
+
+.meet-authors-context-wrapper .meet-authors-description a {
+  color: var(--blue-color);
+}
+
+.meet-authors-context-wrapper .meet-authors-description a:hover {
+  color: var(--blue-color);
+}

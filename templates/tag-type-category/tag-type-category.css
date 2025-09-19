@@ -1,0 +1,32 @@
+.mobile-ads .mobile-ads > div {
+  left: 11px;
+  right: 11px;
+}
+
+@media (width > 425px) {
+  main.grid-layout {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (width <= 992px) {
+  main.grid-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'middle-section middle-section'
+      'right-section right-section'
+      'bottom-section bottom-section';
+  }
+
+  .right-section .right-ad > div {
+    text-align: center;
+  }
+}
+
+@media (width > 1024px) {
+  main.grid-layout {
+    padding-left: unset;
+    padding-right: unset;
+  }
+}

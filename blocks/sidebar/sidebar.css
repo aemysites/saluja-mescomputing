@@ -1,0 +1,22 @@
+/* empty sidebar styling sheet */
+.sidebar p {
+  line-height: var(--line-height-xs);
+}
+
+.sidebar p.button-container a.button {
+  color: var(--content-hub-text-color);
+  text-decoration: none;
+  background-color: transparent;
+  font-size: var(--body-font-size-s);
+  margin: 0;
+  padding: 0;
+  border: none;
+  white-space: wrap;
+  text-align: left;
+  border-radius: 0;
+  font-family: var(--regular-font-size);
+
+  &:hover {
+    color: var(--content-hub-link-hover);
+  }
+}

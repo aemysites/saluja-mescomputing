@@ -1,0 +1,54 @@
+.form.block {
+  background-color: transparent;
+  margin-bottom: 64px;
+
+  & > div {
+    display: none;
+  }
+
+  label {
+    line-height: 1.2em;
+    font-size: 18px;
+    color: #262626;
+    font-weight: bold;
+
+    span {
+      font-family: var(--body-font-family);
+      font-size: 18px;
+    }
+  }
+
+  select {
+    appearance: none;
+  }
+
+  input,
+  select {
+    padding: 2px 3px;
+    line-height: 1.2em;
+    margin: 0;
+    font-size: 1em;
+    background: #fff;
+    border: 1px solid #c6c6c6;
+    border-radius: 4px;
+    outline: none;
+
+    &:active,
+    &:focus {
+      border: 1px solid #fec128;
+    }
+  }
+
+  textarea {
+    outline: none;
+
+    &:active,
+    &:focus {
+      border: 1px solid #fec128;
+    }
+  }
+
+  a {
+    color: #3f8ac8;
+  }
+}

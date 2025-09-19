@@ -1,0 +1,169 @@
+.listing-page {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 59px;
+}
+
+.listing-page .listing-page-title {
+  font-size: 30px;
+  color: var(--listing-page-title-color);
+  margin-top: 0;
+  margin-bottom: 48px;
+}
+
+.listing-page .listing-card {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.listing-page .listing-card .listing-card-context .listing-card-category {
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+
+.listing-page .listing-card .listing-card-image {
+  width: 100%;
+}
+
+.listing-page .listing-card .listing-card-category a {
+  color: var(--listing-page-category-color);
+  font-size: 15px;
+  line-height: var(--spacing-xs);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-family: var(--body-font-family);
+}
+
+.listing-page .listing-card .listing-card-title h4 a {
+  font-size: 22.5px;
+  line-height: 28px;
+  color: var(--listing-page-card-title);
+  font-weight: 700;
+}
+
+.listing-page .listing-card .listing-card-category a:hover {
+  color: var(--listing-page-hover);
+}
+
+.listing-page .listing-card .listing-card-title.lock h4 a {
+  position: relative;
+
+  &::after {
+    content: var(--lock-svg);
+    margin-left: 3px;
+    position: absolute;
+  }
+}
+
+.listing-page .listing-card .listing-card-title h4 {
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+
+.listing-page .listing-card .listing-card-title h4 a:hover {
+  color: var(--listing-page-hover);
+}
+
+.listing-page .listing-card .listing-card-description p {
+  font-size: var(--body-font-size-xxs);
+  line-height: var(--line-height-xs);
+  color: var(--listing-page-text-color);
+  margin: 0 0 16px;
+}
+
+.listing-page .listing-card .listing-card-date {
+  font-size: 14px;
+  line-height: var(--line-height-s);
+  color: var(--listing-page-date-color);
+  display: flex;
+  font-family: var(--regular-font-size);
+  padding-bottom: 5px;
+}
+
+.listing-page .listing-card .listing-card-date img {
+  margin-right: 5px;
+}
+
+@media (width > 425px) {
+  .listing-page {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .listing-page .listing-card .listing-card-image {
+    width: 255px;
+  }
+}
+
+@media (width > 480px) {
+  .listing-page .listing-card .listing-card-date {
+    font-size: var(--body-font-size-xxs);
+  }
+}
+
+@media (width > 576px) {
+  .listing-page .listing-card {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 0;
+  }
+
+  .listing-page .listing-card .listing-card-image-wrapper {
+    width: 28%;
+  }
+
+  .listing-page .listing-card .listing-card-context {
+    width: 60.484%;
+    padding: 0 1.25rem 1.25rem 0.9rem;
+  }
+
+  .listing-page .listing-page-title {
+    margin-bottom: 14px;
+  }
+
+  .listing-page .listing-card .listing-card-context .listing-card-category {
+    margin-top: 0;
+    line-height: 0;
+  }
+}
+
+@media (width > 768px) {
+  .listing-page .listing-page-title {
+    font-size: 43px;
+    margin-bottom: 7px;
+  }
+}
+
+@media (width > 834px) {
+  .listing-page {
+    margin-bottom: 30px;
+  }
+}
+
+@media (width > 991px) {
+  .listing-page .listing-card .listing-card-image-wrapper {
+    width: 36.8%;
+  }
+
+  .listing-page .listing-card .listing-card-context {
+    width: 55.484%;
+  }
+}
+
+@media (width > 1024px) {
+  .listing-page {
+    padding-left: 0;
+    padding-right: 16px;
+  }
+
+  .listing-page .listing-page-title {
+    margin-bottom: 36px;
+  }
+}
+
+@media (width > 1194px) {
+  .listing-page {
+    margin-bottom: 59px;
+  }
+}

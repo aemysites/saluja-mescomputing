@@ -1,5 +1,11 @@
 export default function decorate(block) {
-  if (!block.querySelector(':scope > div:first-child picture')) {
-    block.classList.add('no-image');
+  const link = block.querySelector('a');
+  const picture = block.querySelector('picture');
+  const img = block.querySelector('img');
+  img.alt = 'Hero image';
+
+  if (link) {
+    link.innerText = '';
+    link.prepend(picture);
   }
 }

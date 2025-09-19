@@ -1,6 +1,7 @@
 .columns > div {
   display: flex;
   flex-direction: column;
+  margin-bottom: 38px;
 }
 
 .columns img {
@@ -19,15 +20,46 @@
   display: block;
 }
 
+.columns.marketing {
+  margin-bottom: 12px;
+  color: #1d1d1b;
+  margin-top: 73px;
+
+  h4 {
+    font-size: 28.13px;
+    line-height: 34px;
+    margin-top: 0;
+  }
+}
+
+@media (width >= 600px) {
+  .columns.marketing {
+    margin-bottom: 72px;
+
+    & > div {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 31px;
+
+      div:first-child {
+        width: 38%;
+        padding-right: 20px;
+      }
+
+      div:nth-child(2) {
+        width: 62%;
+      }
+    }
+  }
+}
+
 @media (width >= 900px) {
   .columns > div {
     align-items: center;
     flex-direction: unset;
-    gap: 24px;
   }
 
   .columns > div > div {
-    flex: 1;
     order: unset;
   }
 }

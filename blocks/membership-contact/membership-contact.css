@@ -1,0 +1,74 @@
+.membership-contact.block {
+  padding: 24px 32px;
+  max-width: 868px;
+  background-color: var(--membership-bg-color);
+}
+
+.membership-contact.block > div:first-child {
+  margin-bottom: 24px;
+}
+
+.membership-contact.block h4 {
+  font-size: 22.5px;
+  line-height: 28px;
+  color: var(--membership-blue);
+  margin: 0 0 4px;
+}
+
+.membership-contact.block div p.membership-email {
+  font-size: var(--body-font-size-s);
+  line-height: var(--line-height-m);
+  margin: 0;
+}
+
+.membership-contact.block div.button-container a {
+  display: block;
+  color: var(--membership-contact-btn-text);
+  background-color: var(--membership-contact-btn-bg);
+  border-color: var(--membership-contact-btn-bg);
+  padding: 11px;
+  font-size: var(--body-font-size-s);
+  line-height: 22px;
+  text-align: center;
+  font-family: var(--body-font-family);
+}
+
+.membership-contact.block div p.membership-email a {
+  color: var(--membership-text-color);
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.membership-contact.block div.button-container a:hover {
+  background-color: var(--membership-contact-btn-bg-hover);
+  border-color: var(--membership-contact-btn-bg-hover);
+}
+
+.membership-contact.block div.button-container a:active {
+  background-color: var(--membership-contact-btn-bg-active);
+  border-color: var(--membership-contact-btn-bg-active);
+}
+
+.membership-contact.block div p.membership-email a:hover {
+  color: var(--membership-contact-btn-bg-hover);
+}
+
+@media (width >= 576px) {
+  .membership-contact.block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px auto 0;
+    box-sizing: border-box;
+  }
+
+  .membership-contact.block > div:last-child {
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .membership-contact.block h4 {
+    margin: 0;
+  }
+}

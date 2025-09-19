@@ -1,0 +1,163 @@
+.manage-account-wrapper {
+  .title {
+    font-size: 43.95px;
+    line-height: 48px;
+    color: black;
+    margin-bottom: 59px;
+  }
+
+  .logged-in {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  h6 {
+    font-size: 22.5px;
+    line-height: 28px;
+    margin-bottom: 24px;
+  }
+
+  .tabs .tabs-list {
+    border-bottom: 4px solid #c4c4c4;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+  .tabs .tabs-list button {
+    position: relative;
+    padding: 0 0 12px;
+    color: #6f6f6f;
+    background-color: transparent;
+    line-height: 22px;
+    font-size: 18px;
+    margin-bottom: -1px;
+    border: 1px solid transparent;
+    border-radius: 0;
+    margin-top: 0;
+    width: auto;
+    margin-right: 2px;
+    box-sizing: border-box;
+  }
+
+  .tabs .tabs-list button:hover {
+    color: var(--manage-account-selected-tab-color);
+  }
+
+  .tabs .tabs-list button[aria-selected='true'] {
+    color: var(--manage-account-selected-tab-color);
+    position: relative;
+    border-bottom: 1px solid var(--manage-account-selected-tab-line-color);
+    box-shadow: 0 3px 0 var(--manage-account-selected-tab-line-color);
+  }
+
+  .tabs .tabs-panel {
+    margin-top: -1px;
+    overflow: auto;
+    padding: 24px 0;
+
+    p:has(span) {
+      color: var(--manage-account-details-color);
+      font-size: 18px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+    }
+
+    p span {
+      height: 25px;
+      width: 25px;
+      margin-right: 17px;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    & tbody {
+      border-bottom: 1px solid #e0e0e0;
+
+      & tr {
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid #e0e0e0;
+      }
+
+      & tr:nth-of-type(odd) {
+        background-color: #f4f4f4;
+      }
+
+      & td {
+        padding: 20px 0 22px 24px;
+        line-height: normal;
+
+        & a {
+          color: #262626;
+          text-decoration: none;
+          background-color: transparent;
+          font-size: 18px;
+
+          &:hover {
+            color: var(--manage-account-selected-tab-line-color);
+          }
+        }
+      }
+
+      & td:first-child {
+        font-family: var(--body-font-family);
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      & td:nth-child(2) {
+        font-size: 18px;
+        line-height: 32px;
+
+        span {
+          font-family: var(--body-font-family);
+        }
+      }
+    }
+  }
+
+  .tabs .tabs-panel[aria-hidden='true'] {
+    display: none;
+  }
+}
+
+@media (width > 767px) {
+  .manage-account-wrapper {
+    .tabs .tabs-list button {
+      margin-right: 24px;
+    }
+
+    & .tabs .tabs-panel {
+      & tbody {
+        & tr {
+          flex-direction: row;
+
+          & td {
+            width: 35%;
+          }
+
+          & td:last-child {
+            text-align: right;
+            padding-right: 20px;
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+}

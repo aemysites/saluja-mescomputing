@@ -1,0 +1,102 @@
+.sign-up-newsletters-wrapper .sign-up-newsletters {
+  background-color: var(--sign-up-newsletters-bg-color);
+  padding: 16px;
+  margin-bottom: 16px;
+
+  & .icon {
+    height: 87px;
+    width: unset;
+  }
+
+  & h2 {
+    text-align: center;
+    line-height: 34px;
+    margin-top: -2px;
+    margin-bottom: 0;
+  }
+
+  & h2 a {
+    color: var(--sign-up-newsletters-link-color);
+    font-size: var(--body-font-size-l);
+    line-height: 34px;
+    margin-top: -2px;
+  }
+
+  & .button-container {
+    line-height: 0;
+  }
+
+  & .button-container a {
+    width: 100%;
+    margin-bottom: 0;
+    padding: 11px 0;
+    border-radius: unset;
+    background-color: var(--sign-up-newsletters-btn-color);
+    color: var(--sign-up-newsletters-btn-text-color);
+    font-size: var(--body-font-size-s);
+    transition: 0.2s;
+    line-height: 22.5px;
+  }
+
+  & h2 a:hover {
+    color: var(--sign-up-newsletters-hover-color);
+  }
+
+  & .button-container a:hover {
+    background-color: var(--sign-up-newsletters-btn-hover-color);
+  }
+
+  & .button-container a:active {
+    background-color: var(--sign-up-newsletters-link-color);
+    border-color: var(--sign-up-newsletters-link-color);
+  }
+
+  & p {
+    font-size: var(--body-font-size-s);
+    line-height: 32px;
+    margin-bottom: 18px;
+    margin-top: 12px;
+    color: var(--sign-up-newsletters-description-color);
+    text-align: center;
+  }
+
+  & p:first-child {
+    margin-bottom: unset;
+    line-height: 0;
+    margin-top: unset;
+  }
+}
+
+@media (width > 480px) {
+  .sign-up-newsletters-wrapper .sign-up-newsletters {
+    & .button-container {
+      text-align: center;
+
+      & a {
+        width: auto;
+        padding: 11px;
+      }
+    }
+  }
+}
+
+@media (width > 576px) {
+  .sign-up-newsletters-wrapper .sign-up-newsletters {
+    padding: 24px;
+  }
+}
+
+@media (width >= 768px) {
+  .sign-up-newsletters-wrapper .sign-up-newsletters {
+    margin-bottom: unset;
+
+    & .button-container {
+      text-align: center;
+
+      & a {
+        width: 100%;
+        padding: 11px 0;
+      }
+    }
+  }
+}

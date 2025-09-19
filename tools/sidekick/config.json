@@ -1,5 +1,18 @@
 {
-  "project": "AEM XWalk Boilerplate",
-  "editUrlLabel": "AEM Editor",
-  "editUrlPattern": "{{contentSourceUrl}}{{pathname}}?cmd=open"
+  "project": "Example",
+  "plugins": [
+    {
+      "id": "library",
+      "title": "Library",
+      "environments": ["edit"],
+      "url": "/tools/sidekick/library.html",
+      "includePaths": ["**.docx**"]
+    },
+    {
+      "id": "tagger",
+      "title": "Tagger",
+      "environments": ["edit"],
+      "url": "/tools/sidekick/tagger/tagger.html"
+    }
+  ]
 }

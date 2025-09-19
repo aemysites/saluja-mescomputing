@@ -1,0 +1,45 @@
+.whitepapers-iframe-container {
+  margin-top: 25px;
+  margin-bottom: 32px;
+
+  & ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    & li {
+      padding-left: 15px;
+      position: relative;
+      margin-bottom: 15px;
+      font-size: var(--body-font-size-s);
+      line-height: var(--line-height-m);
+      font-family: var(--regular-font-size);
+
+      &::marker {
+        color: transparent;
+      }
+
+      & a {
+        color: var(--iframe-text);
+        cursor: pointer;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 13px;
+        width: 8px;
+        height: 8px;
+        background-color: var(--iframe-text);
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .whitepapers-iframe {
+    & iframe {
+      height: 1140px;
+    }
+  }
+}

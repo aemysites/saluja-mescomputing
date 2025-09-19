@@ -1,70 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+  <head>
+    <title>Hmmm, we can't seem to find the page you're looking for | Computing</title>
+    <script type="text/javascript">
+      window.isErrorPage = true;
+      window.errorCode = '404';
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Page not found" />
+    <script src="/scripts/scripts.js" type="module" crossorigin="use-credentials"></script>
+    <script type="module">
+      import { sampleRUM } from '/scripts/aem.js';
 
-<head>
-  <title>Page not found</title>
-  <script type="text/javascript">
-    window.isErrorPage = true;
-    window.errorCode = '404';
-  </script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Page not found">
-  <script src="/scripts/aem.js" type="module"></script>
-  <script src="/scripts/scripts.js" type="module"></script>
-  <link rel="stylesheet" href="/styles/styles.css"/>
-
-  <!--  404 Specific Content  -->
-  <script type="module">
-    window.addEventListener('load', () => {
-      if (document.referrer) {
-        const { origin, pathname } = new URL(document.referrer);
-        if (origin === window.location.origin) {
-          const backBtn = document.createElement('a');
-          backBtn.classList.add('button', 'error-button-back');
-          backBtn.href = pathname;
-          backBtn.textContent = 'Go back';
-          backBtn.title = 'Go back';
-          const btnContainer = document.querySelector('.button-container');
-          btnContainer.append(backBtn);
-        }
+      function setGatedMetaOff(themeSite) {
+        const metaTag = document.createElement('meta');
+        const metaTag2 = document.createElement('meta');
+        const metaTag3 = document.createElement('meta');
+        metaTag.setAttribute('name', 'gated');
+        metaTag2.setAttribute('content', 'off');
+        metaTag3.setAttribute('theme', themeSite);
+        document.getElementsByTagName('head')[0].appendChild(metaTag);
+        document.getElementsByTagName('head')[0].appendChild(metaTag2);
+        document.getElementsByTagName('head')[0].appendChild(metaTag3);
       }
-    });
-  </script>
-  <script type="module">
-    import { sampleRUM } from '/scripts/aem.js';
-    sampleRUM('404', { source: document.referrer });
-  </script>
-  <style>
-    main.error {
-      min-height: calc(100vh - var(--nav-height));
-      display: flex;
-      align-items: center;
-    }
 
-    main.error .error-number {
-      width: 100%;
-    }
+      const enTexts = [
+        "We're sorry",
+        'The page you have requested may be outdated or is not available on our website!',
+        'You can try going back to the previous page, use the search option above or start again from the',
+        'homepage',
+      ];
 
-    main.error .error-number text {
-      font-family: monospace;
-    }
-  </style>
-</head>
+      const deTexts = [
+        'Es tut uns leid',
+        'Die von Ihnen angeforderte Seite ist möglicherweise veraltet oder auf unserer Website nicht verfügbar!',
+        'Sie können versuchen, zur vorherigen Seite zurückzukehren, die Suchoption oben zu verwenden oder von vorne zu beginnen',
+        'Startseite',
+      ];
 
-<body>
-  <header></header>
-  <main class="error">
-    <div class="section">
-      <svg viewBox="1 0 38 18" class="error-number">
-        <text x="0" y="17">404</text>
-      </svg>
-      <h2 class="error-message">Page Not Found</h2>
-      <p class="button-container">
-        <a href="/" class="button secondary error-button-home">Go home</a>
-      </p>
-    </div>
-  </main>
-  <footer></footer>
-</body>
+      let theme;
 
+      const placeholders =
+        window.location.href.includes('crn-de') || window.location.href.includes('crn.de') ||
+        window.location.href.includes('computing-de') || window.location.href.includes('computingdeutschland.de') || 
+        window.location.href.includes('localhost:3016') ? deTexts : enTexts;
+
+      if (
+        placeholders === deTexts ||
+        window.location.href.includes('localhost:3012') ||
+        window.location.href.includes('crn-de') ||
+        window.location.href.includes('crn.de')
+      ) {
+        document.getElementsByTagName('head')[0].getElementsByTagName('link')[0].href =
+          '/styles/themes/crnde-styles.css';
+        theme = 'crn-de';
+      }
+
+      if (
+        placeholders === deTexts ||
+        window.location.href.includes('localhost:3016') ||
+        window.location.href.includes('computing-de') ||
+        window.location.href.includes('computingdeutschland.de')
+      ) {
+        document.getElementsByTagName('head')[0].getElementsByTagName('link')[0].href =
+          '/styles/themes/computingde-styles.css';
+        theme = 'computing-de';
+      }
+
+      if (
+        window.location.href.includes('computing-co-uk') ||
+        window.location.href.includes('computing.co.uk') ||
+        window.location.href.includes('localhost:3011')
+      ) {
+        document.getElementsByTagName('head')[0].getElementsByTagName('link')[0].href =
+          '/styles/themes/computingco-styles.css';
+        theme = 'computing-co-uk';
+      }
+
+      if (
+        window.location.href.includes('channelweb-co-uk') ||
+        window.location.href.includes('channelweb.co.uk') ||
+        window.location.href.includes('localhost:3013')
+      ) {
+        document.getElementsByTagName('head')[0].getElementsByTagName('link')[0].href =
+          '/styles/themes/channelweb-styles.css';
+        theme = 'channelweb-co-uk';
+      }
+
+      if (
+        window.location.href.includes('crn-asia') ||
+        window.location.href.includes('crnasia.com') ||
+        window.location.href.includes('localhost:3014')
+      ) {
+        document.getElementsByTagName('head')[0].getElementsByTagName('link')[0].href =
+          '/styles/themes/crn-asia-styles.css';
+      }
+
+      if (
+        window.location.href.includes('crn-australia') ||
+        window.location.href.includes('crn.com.au') ||
+        window.location.href.includes('localhost:3015')
+      ) {
+        document.getElementsByTagName('head')[0].getElementsByTagName('link')[0].href =
+          '/styles/themes/crn-australia-styles.css';
+      }
+
+      setGatedMetaOff(theme);
+
+      window.addEventListener('load', () => {
+        const sorryMessage = document.querySelector('.error-section .sorry-message');
+        sorryMessage.innerHTML = placeholders[0];
+        const errorMessage = document.querySelector('.error-section .error-message');
+        errorMessage.innerHTML = placeholders[1];
+        const buttonMessage = document.querySelector('.error-section .button-container');
+        buttonMessage.insertAdjacentHTML('afterbegin', placeholders[2]);
+        const anchorMessage = document.querySelector('.error-section .button-container .home-link');
+        anchorMessage.setAttribute('href', window.location.origin);
+        anchorMessage.innerHTML = placeholders[3];
+        sampleRUM('404', { source: document.referrer, target: window.location.href });
+      });
+
+      const bodyContent = document.querySelector('body');
+      bodyContent.className = theme;
+    </script>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <style>
+      main.error {
+        min-height: calc(100vh - var(--nav-height));
+        display: flex;
+        align-items: center;
+      }
+
+      main.error .sorry-message h2 {
+        font-size: 43.95px !important;
+        font-weight: 700;
+      }
+
+      main.error error-message p {
+        font-size: var(--body-font-size-s);
+        font-weight: 700;
+      }
+
+      main.error button-container p {
+        font-size: var(--body-font-size-s);
+        font-weight: 400;
+      }
+
+      main.error button-container p a {
+        font-size: var(--body-font-size-s);
+        font-weight: 400;
+      }
+    </style>
+    <link rel="stylesheet" href="/styles/lazy-styles.css" />
+  </head>
+
+  <body>
+    <header></header>
+    <main class="error">
+      <div class="error-section">
+        <h2 class="sorry-message"></h2>
+        <p class="error-message"></p>
+        <p class="button-container">
+          <a href="" class="home-link"></a>
+        </p>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
 </html>

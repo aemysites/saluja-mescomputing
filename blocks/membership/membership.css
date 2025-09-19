@@ -1,0 +1,523 @@
+.membership.block h2 {
+  font-size: 28.83px;
+  line-height: var(--line-height-m);
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--membership-join-text-color);
+}
+
+.membership.block p {
+  text-align: center;
+  font-size: var(--body-font-size-s);
+  color: var(--membership-text-gray-color);
+  line-height: 20.16px;
+  font-style: normal;
+  margin: 0 0 20px;
+}
+
+.membership-join {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    'row-1 row-1'
+    'row-2 row-2'
+    'row-3 row-3'
+    'row-4 row-4'
+    'row-5 row-5'
+    'row-6-col-1 row-6-col-2'
+    'row-7 row-7'
+    'row-8-col-1 row-8-col-2'
+    'row-9 row-9'
+    'row-10 row-10'
+    'row-11 row-11'
+    'row-12 row-12'
+    'row-13 row-13'
+    'row-14 row-14';
+  text-align: center;
+  padding-top: 40px;
+
+  > * {
+    border: 1px solid var(--membership-dark-color);
+    color: var(--membership-join-text-color);
+    padding: 0.75rem;
+  }
+
+  a.button {
+    background-color: var(--membership-button-color);
+    border-color: var(--membership-button-color);
+    color: var(--membership-button-text-color);
+    border-radius: 0;
+    width: 83%;
+    font-size: var(--body-font-size-s);
+    display: block;
+    margin: 0 auto 14px;
+    padding: 11px;
+
+    &:hover {
+      background-color: var(--membership-button-color-hover);
+      border-color: var(--membership-button-color-hover);
+    }
+
+    &:active {
+      background-color: var(--membership-button-active);
+      border-color: var(--membership-button-active);
+    }
+  }
+}
+
+.table-banner {
+  display: none;
+}
+
+.most-popular {
+  grid-area: row-3;
+  border: none;
+  padding: 0;
+
+  > div {
+    text-align: left;
+    width: fit-content;
+  }
+
+  h5 {
+    background: var(--membership-button-active);
+    color: var(--membership-button-text-color);
+    line-height: 21px;
+    font-size: 14px;
+    margin: 25px auto 0 1px;
+    padding: 4px 16px;
+  }
+}
+
+.standard {
+  display: none;
+}
+
+.standard-title {
+  grid-area: row-1;
+  font-size: var(--body-font-size-s);
+  font-family: var(--body-font-family);
+  line-height: 22px;
+  color: var(--membership-join-text-color);
+}
+
+.standard-join {
+  grid-area: row-2;
+  border-top: none;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: 28.13px;
+    line-height: 34px;
+    color: var(--membership-join-text-color);
+  }
+
+  p.button-container {
+    margin-bottom: 0;
+  }
+}
+
+.popular-title {
+  grid-area: row-4;
+  border: 1px solid var(--membership-button-active);
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-s);
+  line-height: 22px;
+  color: var(--membership-join-text-color);
+}
+
+.popular-join {
+  grid-area: row-5;
+  border-top: none;
+  border-left: 1px solid var(--membership-button-active);
+  border-right: 1px solid var(--membership-button-active);
+  border-bottom: 1px solid var(--membership-button-active);
+
+  h3 {
+    font-size: var(--body-font-size-l);
+    line-height: 34px;
+    font-family: var(--body-font-family);
+    color: var(--membership-join-text-color);
+    margin: 0 auto 0.75rem;
+  }
+
+  p.button-container {
+    margin: 0;
+  }
+}
+
+.year {
+  grid-area: row-6-col-1;
+  border: 1px solid var(--membership-dark-color);
+  margin-top: 1rem;
+
+  > div {
+    height: 100%;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    color: var(--membership-join-text-color);
+    font-size: var(--body-font-size-xxs);
+    font-family: var(--regular-font-size);
+  }
+}
+
+.most-popular-description {
+  grid-area: row-6-col-2;
+  border-left: none;
+  margin-top: 1rem;
+  font-size: var(--body-font-size-xxs);
+  line-height: 20.16px;
+  color: var(--membership-text-gray-color-2);
+}
+
+.standard-description-1 {
+  grid-area: row-7;
+  border-top: none;
+  text-align: left;
+  font-size: var(--body-font-size-xxs);
+}
+
+.standard-description-1-type {
+  grid-area: row-8-col-1;
+  border-top: none;
+  font-size: var(--body-font-size-xxs);
+}
+
+.users-number {
+  grid-area: row-8-col-2;
+  border-top: none;
+  border-left: none;
+  font-size: var(--body-font-size-xxs);
+}
+
+.standard-description-2 {
+  grid-area: row-9;
+  border: 1px solid var(--membership-dark-color);
+  margin-top: 1rem;
+  font-size: var(--body-font-size-xxs);
+}
+
+.standard-description-2-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-area: row-10;
+  font-size: var(--body-font-size-xxs);
+  line-height: 3.5rem;
+  border-top: none;
+  padding: 0;
+
+  &::after {
+    content: '';
+    display: block;
+    background-image: url('../../icons/righttick.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    grid-column: 2;
+    grid-row: 1;
+    border-left: inherit;
+  }
+}
+
+.standard-description-3 {
+  grid-area: row-11;
+  margin-top: 1rem;
+  font-size: var(--body-font-size-xxs);
+  text-align: left;
+}
+
+.standard-description-3-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-area: row-12;
+  border-top: none;
+  font-size: var(--body-font-size-xxs);
+  padding: 0;
+  line-height: 3.5rem;
+
+  &::after {
+    content: '';
+    display: block;
+    background-image: url('../../icons/righttick.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    grid-column: 2;
+    grid-row: 1;
+    border-left: inherit;
+  }
+}
+
+.standard-description-4 {
+  grid-area: row-13;
+  margin-top: 1rem;
+  font-size: var(--body-font-size-xxs);
+  text-align: left;
+}
+
+.standard-description-4-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-area: row-14;
+  border-top: none;
+  font-size: var(--body-font-size-xxs);
+  padding: 0;
+  line-height: 3.5rem;
+
+  &::after {
+    content: '';
+    display: block;
+    background-image: url('../../icons/righttick.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    grid-column: 2;
+    grid-row: 1;
+    border-left: inherit;
+  }
+}
+
+.standard-join-bottom-btn,
+.popular-join-bottom-btn {
+  display: none;
+}
+
+@media (width > 768px) {
+  .membership.block h2 {
+    font-size: 43px;
+    line-height: var(--line-height-l);
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: 63px;
+  }
+
+  .membership-join {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+
+    > * {
+      min-height: 60px;
+      padding: 1.1rem;
+    }
+  }
+
+  .year,
+  .standard,
+  [class^='standard'][class$='type'] {
+    display: none;
+  }
+
+  .most-popular {
+    grid-column: 3;
+    grid-row: 1;
+    border: 1px solid var(--membership-button-active);
+    border-bottom: none;
+    padding: 0;
+    min-height: unset;
+
+    h5 {
+      margin: 15px auto 0 0;
+      padding-bottom: 1px;
+    }
+  }
+
+  .standard-title {
+    grid-column: 2;
+    grid-row: 2;
+    border-right: none;
+    min-height: unset;
+  }
+
+  .popular-title {
+    grid-column: 3;
+    grid-row: 2;
+    background-color: var(--membership-popular-background);
+    min-height: unset;
+  }
+
+  .standard-join {
+    grid-column: 2;
+    grid-row: 3;
+    border-bottom: none;
+    border-right: none;
+
+    a.button {
+      margin-bottom: 10px;
+    }
+  }
+
+  .popular-join {
+    grid-column: 3;
+    grid-row: 3;
+    background-color: var(--membership-popular-background);
+    border-bottom: none;
+
+    a.button {
+      margin-bottom: 10px;
+    }
+  }
+
+  .table-banner {
+    display: block;
+    grid-column: 1 / span 3;
+    grid-row: 4;
+    color: var(--membership-btn-text-color);
+    background-color: var(--membership-table-banner);
+    border-top: none;
+    min-height: unset;
+
+    h3 {
+      font-size: var(--body-font-size-l);
+      line-height: 34px;
+      margin: 0;
+    }
+  }
+
+  .most-popular-description {
+    grid-column: 3;
+    grid-row: 5 / span 4;
+    margin-top: 0;
+    background-color: var(--membership-popular-background);
+    z-index: 10;
+    border: 1px solid var(--membership-button-active);
+    border-top: none;
+
+    > div {
+      height: 100%;
+      display: flex;
+      place-items: center;
+    }
+  }
+
+  .standard-description-1 {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+    min-height: unset;
+    border-right: none;
+  }
+
+  .standard-description-2 {
+    grid-column: 1 / span 3;
+    grid-row: 6;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 1fr;
+    border-top: none;
+    margin-top: 0;
+    padding: 0;
+
+    > div {
+      display: flex;
+      align-items: center;
+      padding-left: 1.1rem;
+      margin-right: 0.5rem;
+      text-align: left;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      background-image: url('../../icons/righttick.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 20px;
+      grid-column: 2;
+      grid-row: 1;
+      border-left: 1px solid var(--membership-dark-color);
+    }
+  }
+
+  .standard-description-3 {
+    grid-column: 1 / span 3;
+    grid-row: 7;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 1fr;
+    border-top: none;
+    margin-top: 0;
+    padding: 0;
+
+    > div {
+      display: flex;
+      align-items: center;
+      padding-left: 1.1rem;
+      margin-right: 0.5rem;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      background-image: url('../../icons/righttick.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 20px;
+      grid-column: 2;
+      grid-row: 1;
+      border-left: 1px solid var(--membership-dark-color);
+    }
+  }
+
+  .standard-description-4 {
+    grid-column: 1 / span 3;
+    grid-row: 8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 1fr;
+    border-top: none;
+    margin-top: 0;
+    padding: 0;
+
+    > div {
+      display: flex;
+      align-items: center;
+      padding-left: 1.1rem;
+      margin-right: 0.5rem;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      background-image: url('../../icons/righttick.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 20px;
+      grid-column: 2;
+      grid-row: 1;
+      border-left: 1px solid var(--membership-dark-color);
+    }
+  }
+
+  .users-number {
+    grid-column: 2;
+    grid-row: 5;
+    min-height: unset;
+    border-right: none;
+    border-left: 1px solid var(--membership-dark-color);
+  }
+
+  .standard-join-bottom-btn,
+  .popular-join-bottom-btn {
+    display: block;
+  }
+
+  .standard-join-bottom-btn {
+    grid-column: 2;
+    grid-row: 9;
+    border-top: none;
+    border-right: none;
+  }
+
+  .popular-join-bottom-btn {
+    grid-column: 3;
+    grid-row: 9;
+    border: 1px solid var(--membership-button-active);
+    border-top: none;
+    background-color: var(--membership-popular-background);
+  }
+}

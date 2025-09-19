@@ -1,0 +1,110 @@
+.happy-customers-wrapper:has(.more-members-variation) {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  border-bottom: 2px solid #929292;
+}
+
+.happy-customers div:first-of-type div > p {
+  font-size: 18px;
+  line-height: 32px;
+  color: #262626;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.happy-customers div div table td p:first-child {
+  margin-bottom: 0;
+}
+
+.happy-customers div div table td p:last-child {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-xxs);
+  line-height: var(--line-height-xs);
+  color: #6f6f6f;
+  padding: 8px 0;
+  margin-bottom: 0;
+}
+
+.happy-customers.more-members-variation div:first-of-type div > p {
+  text-align: center;
+  font-size: var(--body-font-size-xl);
+  line-height: var(--line-height-l);
+  font-family: var(--body-font-family);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.happy-customers div div table {
+  border-collapse: collapse;
+  width: 70%;
+  border-spacing: 10px;
+  margin-bottom: 44px;
+}
+
+.happy-customers.more-members-variation div div table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border-collapse: separate;
+  border-spacing: 0 41px;
+  margin-bottom: 0;
+  max-width: 1441px;
+}
+
+.happy-customers div div table td {
+  vertical-align: top;
+  border-bottom: 1px solid var(--happy-cusrtomers-border-color);
+}
+
+.happy-customers.more-members-variation div div table td {
+  vertical-align: middle;
+}
+
+.happy-customers div div table img {
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+
+.happy-customers.more-members-variation div div table img {
+  height: auto;
+}
+
+@media (width <= 576px) {
+  .happy-customers-wrapper:has(.more-members-variation) {
+    margin-bottom: 32px;
+  }
+
+  .happy-customers.more-members-variation div:first-of-type div > p {
+    font-size: var(--body-font-size-l);
+    line-height: var(--line-height-m);
+  }
+
+  .happy-customers.more-members-variation div div table,
+  .happy-customers.more-members-variation div div table tbody,
+  .happy-customers.more-members-variation div div table tr,
+  .happy-customers.more-members-variation div div table td {
+    display: block;
+  }
+
+  .happy-customers.more-members-variation div div table tr {
+    padding-top: 41px;
+  }
+
+  .happy-customers.more-members-variation div div table tr td {
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (width > 1024px) {
+  .happy-customers-wrapper:has(.more-members-variation) {
+    margin-top: unset;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+    max-width: 100vw;
+  }
+}
